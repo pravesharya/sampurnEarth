@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+:root{
+  --blue1: #2EA2E0;  
+  --blue2:#ABDAF3;
+  --green : #BDD71C;
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+.CC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#currentPage{
+  display: none;
+}
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: red;
+  border-radius: 10%;
+}
+.close-btn:hover{
+  background-color: rgb(185, 0, 0);
+}
+
+.section{
+  width: 100%;
+  padding: 20px;
+  height: 80vh;
+}
+.section-W {
+  background-color: white;
+  color: black;
+}
+.section-B {
+  background-color: var(--blue1);
+  color: white;
+}
+.section-1{
+  height: 100vh;
+}
+.section-heading{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue1);
+  border: black 1px solid;
+}
