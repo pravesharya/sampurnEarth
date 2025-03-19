@@ -63,11 +63,6 @@ function createHeader() {
       const overlay = document.createElement("div");
       overlay.classList.add("overlay");
       document.body.appendChild(overlay);
-
-      closeBtn.addEventListener("click", () => {
-        panel.style.right = "-100%";
-        document.body.removeChild(overlay);
-      });
     });
     header.appendChild(menuBtn);
 
@@ -77,6 +72,7 @@ function createHeader() {
     closeBtn.classList.add("close-btn");
     closeBtn.addEventListener("click", () => {
       panel.style.right = "-100%";
+      document.body.removeChild(overlay);
     });
     panel.appendChild(closeBtn);
     panel.appendChild(links);
