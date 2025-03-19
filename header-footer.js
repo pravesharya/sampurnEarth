@@ -98,27 +98,27 @@ function createHeader() {
   });
 
   document.getElementById("services").addEventListener("click", () => {
-    window.location.href = "_services.html";
+    window.location.href = "xServices.html";
   });
 
   document.getElementById("projects").addEventListener("click", () => {
-    window.location.href = "_projects.html";
+    window.location.href = "xProjects.html";
   });
 
   document.getElementById("media").addEventListener("click", () => {
-    window.location.href = "_media.html";
+    window.location.href = "xMedia.html";
   });
 
   document.getElementById("foundation").addEventListener("click", () => {
-    window.location.href = "_foundation.html";
+    window.location.href = "xFoundation.html";
   });
 
   document.getElementById("careers").addEventListener("click", () => {
-    window.location.href = "_careers.html";
+    window.location.href = "xCareers.html";
   });
 
   document.getElementById("about").addEventListener("click", () => {
-    window.location.href = "_about.html";
+    window.location.href = "xAbout.html";
   });
 }
 createHeader();
