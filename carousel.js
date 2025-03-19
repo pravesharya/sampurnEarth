@@ -1,3 +1,8 @@
+
+const isMobile =
+  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
+  window.innerWidth < window.innerHeight;
+
 function createCarousel(pathsss, captionsss) {
   let totalImages = pathsss.length;
 
@@ -39,6 +44,7 @@ function createCarousel(pathsss, captionsss) {
   for (let i = 0; i < totalImages; i++) {
     const img = document.createElement("img");
     img.src = pathsss[i];
+    if(isMobile) img.style.width = "100%";
     images.push(img);
 
     const dot = document.createElement("div");

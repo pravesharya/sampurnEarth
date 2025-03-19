@@ -1,28 +1,42 @@
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
 }
+
 :root{
   --blue1: #2EA2E0;  
   --blue2:#ABDAF3;
   --green : #BDD71C;
   font-size: 10px;
 }
-body {
-  height: 100vh;
-  overflow-x: hidden;
-}
+
 .CC {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  overflow-x: hidden;
+}
+.main-content{
+  width: 100%;
+  /* height: calc(100% - 80px); */
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+  flex-direction: column;
+  margin-top: 80px;
+}
+
 #currentPage{
   display: none;
 }
+
 .close-btn{
   position: absolute;
   top: 10px;
@@ -39,8 +53,8 @@ body {
 
 .section{
   width: 100%;
-  padding: 20px;
   height: 80vh;
+  padding: 20px;
 }
 .section-W {
   background-color: white;
@@ -50,6 +64,7 @@ body {
   background-color: var(--blue1);
   color: white;
 }
+
 .section-1{
   height: 100vh;
 }

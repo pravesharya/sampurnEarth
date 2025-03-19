@@ -13,3 +13,8 @@ function checkMobile() {
   console.log(" Width < Height : ", orientation);
 }
 checkMobile();
+
+let width = window.innerWidth;
+let height = window.innerHeight;
+console.log("Width: ", width);
+console.log("Height: ", height);
