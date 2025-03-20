@@ -12,14 +12,16 @@ header.classList.add("CC");
 header.classList.add("HF");
 
 const logoH = document.createElement("div");
-const logoImg1 = document.createElement("img");
+const logoH_Img = document.createElement("img");
 
 function createHeader() {
-  logoImg1.src = "./assets/logo-h.png";
-  logoImg1.alt = "Company Logo";
-  logoH.appendChild(logoImg1);
+  logoH_Img.src = "./assets/logo-h.png";
+  logoH_Img.alt = "Company Logo";
+  logoH.appendChild(logoH_Img);
   logoH.classList.add("pointer");
+  if(isMobile) logoH_Img.style.width = "80%";
   header.appendChild(logoH);
+
 
   const links = document.createElement("div");
   const pages = [
@@ -54,25 +56,33 @@ function createHeader() {
     panel.classList.add("side-panel");
     panel.style.right = "-100%";
 
+    const overlay = document.createElement("div");
     const menuBtn = document.createElement("div");
-    menuBtn.innerHTML = "M";
+    const menuBtnImg = document.createElement("img");
+    menuBtnImg.src = "./assets/menu.svg";
+    menuBtn.appendChild(menuBtnImg);
+    // menuBtn.innerHTML = "M";
     menuBtn.classList.add("CC");
     menuBtn.classList.add("menu-btn");
     menuBtn.addEventListener("click", () => {
       panel.style.right = "0";
-      const overlay = document.createElement("div");
       overlay.classList.add("overlay");
       document.body.appendChild(overlay);
     });
     header.appendChild(menuBtn);
 
     const closeBtn = document.createElement("div");
-    closeBtn.innerHTML = "X";
+    const closeBtnImg = document.createElement("img");
+    closeBtnImg.src = "./assets/close-white.svg";
+    closeBtnImg.style.width = "60%";
+    closeBtn.appendChild(closeBtnImg);
+
+    // closeBtn.innerHTML = "X";
     closeBtn.classList.add("CC");
     closeBtn.classList.add("close-btn");
     closeBtn.addEventListener("click", () => {
-      panel.style.right = "-100%";
       document.body.removeChild(overlay);
+      panel.style.right = "-100%";
     });
     panel.appendChild(closeBtn);
     panel.appendChild(links);
@@ -86,7 +96,6 @@ function createHeader() {
 
   if (isMobile) {
     document.getElementById(currentPage).style.backgroundColor = "var(--green)";
-    // document.getElementById(currentPage).style.color = "white";
   } else {
     document.getElementById(currentPage).style.borderBottom =
       "var(--green) 4px solid";
@@ -126,13 +135,13 @@ createHeader();
 // Footer ============================================================================
 
 const logoF = document.createElement("div");
-const logoImg2 = document.createElement("img");
+const logoF_Img = document.createElement("img");
 
 function createFooter(params) {
-  logoImg2.src = isMobile ? "./assets/logo-fM.png" : "./assets/logo-f.png";
-  logoImg2.alt = "Company Logo";
-  logoImg2.style.width = "80%";
-  logoF.appendChild(logoImg2);
+  logoF_Img.src = isMobile ? "./assets/logo-fM.png" : "./assets/logo-f.png";
+  logoF_Img.alt = "Company Logo";
+  logoF_Img.style.width = "80%";
+  logoF.appendChild(logoF_Img);
   logoF.classList.add("pointer");
   footer.appendChild(logoF);
 

@@ -5,11 +5,19 @@
   user-select: none;
 }
 
-:root{
-  --blue1: #2EA2E0;  
-  --blue2:#ABDAF3;
-  --green : #BDD71C;
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --blue1: #2ea2e0;
+  --blue2: #abdaf3;
+  --green: #bdd71c;
   font-size: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .CC {
@@ -21,40 +29,40 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background-color: white;
   overflow-x: hidden;
 }
-.main-content{
+.main-content {
   width: 100%;
-  /* height: calc(100% - 80px); */
   overflow-x: hidden;
-  /* overflow-y: auto; */
   flex-direction: column;
   margin-top: 80px;
 }
 
-#currentPage{
+#currentPage {
   display: none;
 }
 
-.close-btn{
+.close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   width: 30px;
   height: 30px;
   color: white;
   background-color: red;
-  border-radius: 10%;
+  border-radius: 50%;
 }
-.close-btn:hover{
+.close-btn:hover {
   background-color: rgb(185, 0, 0);
 }
 
-.section{
+.section {
   width: 100%;
-  height: 80vh;
-  padding: 20px;
+  padding: 2rem;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
 }
 .section-W {
   background-color: white;
@@ -65,15 +73,95 @@ body {
   color: white;
 }
 
-.section-1{
+.section-1 {
   height: 100vh;
 }
-.section-heading{
-  font-size: 1.6rem;
+.section-heading {
+  font-size: 5rem;
   font-weight: bold;
 }
 
-/* Custom scrollbar styles */
+.counter{
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+}
+
+
+#un > h2{
+  font-size: 4rem;
+  font-weight: bold;
+}
+#un > h4{
+  font-size: 2rem;
+}
+/* cards =================================================== */
+
+.cards-list {
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-a{
+  width: 20rem;
+  min-height: 23rem;
+  padding: 2rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+  border: white 4px solid;
+}
+.card-a:hover{
+  border: var(--green) 4px solid;
+}
+.card-a-I{
+  width: 100%;
+  height: 14rem;
+  border: var(--blue1) 1px solid;
+  border-radius: 1rem;
+}
+.card-a-H{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--blue1);
+}
+
+.card-b{
+  width: 26rem;
+  height: 44rem;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: var(--blue1) 1px solid;
+  border-radius: 1rem;
+}
+.card-b-I{
+  width: 20rem;
+  height: 20rem;
+  border: var(--blue1) 1px solid;
+  border-radius: 50%;
+}
+.card-b-H{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card-b-D{
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight:normal;
+}
+
+
+
+
+ /* Custom scrollbar styles ================================================ */
 ::-webkit-scrollbar {
   width: 1.2rem;
 }
@@ -87,4 +175,57 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--blue1);
   border: black 1px solid;
+}
+
+/* Tab & Mobile =============================================================  */
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 4.4rem;
+  }
+
+  /* .card-a{
+    width: 18rem;
+    height: 20rem;
+  }
+  .card-a-I{
+    width: 12rem;
+    height: 12rem;
+  }
+  .card-a-H{
+    font-size: 1.4rem;
+  } */
+
+  .card-b{
+    width: 22rem;
+    height: 36rem;
+  }
+  .card-b-I{
+    width: 16rem;
+    height: 16rem;
+  }
+  .card-b-H{
+    font-size: 1.6rem;
+  }
+  .card-b-D{
+    font-size: 1.2rem;
+  }
+
+  .counter{
+    width: 18rem;
+    height: 18rem;
+  }
+  
+}
+@media (max-width: 412px) {
+  .section-heading {
+    font-size: 4rem;
+  }
+  .cards-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .counter{
+    width: 12rem;
+    height: 12rem;
+  }
 }
