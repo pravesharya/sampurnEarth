@@ -81,20 +81,28 @@ body {
   font-weight: bold;
 }
 
-.counter{
+.counter {
   width: 20rem;
   height: 20rem;
   background-color: white;
   border-radius: 50%;
   color: black;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.counterH {
+  width: 70%;
+}
+.counterNv {
+  font-size: 3.2rem;
+  font-weight: bold;
 }
 
-
-#un > h2{
+#un > h2 {
   font-size: 4rem;
   font-weight: bold;
 }
-#un > h4{
+#un > h4 {
   font-size: 2rem;
 }
 /* cards =================================================== */
@@ -106,7 +114,7 @@ body {
   flex-wrap: wrap;
 }
 
-.card-a{
+.card-a {
   width: 20rem;
   min-height: 23rem;
   padding: 2rem;
@@ -117,22 +125,22 @@ body {
   border-radius: 1rem;
   border: white 4px solid;
 }
-.card-a:hover{
+.card-a:hover {
   border: var(--green) 4px solid;
 }
-.card-a-I{
+.card-a-I {
   width: 100%;
   height: 14rem;
   border: var(--blue1) 1px solid;
   border-radius: 1rem;
 }
-.card-a-H{
+.card-a-H {
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--blue1);
 }
 
-.card-b{
+.card-b {
   width: 26rem;
   height: 44rem;
   padding: 1rem;
@@ -142,26 +150,23 @@ body {
   border: var(--blue1) 1px solid;
   border-radius: 1rem;
 }
-.card-b-I{
+.card-b-I {
   width: 20rem;
   height: 20rem;
   border: var(--blue1) 1px solid;
   border-radius: 50%;
 }
-.card-b-H{
+.card-b-H {
   font-size: 2rem;
   font-weight: bold;
 }
-.card-b-D{
+.card-b-D {
   font-family: sans-serif;
   font-size: 1.4rem;
-  font-weight:normal;
+  font-weight: normal;
 }
 
-
-
-
- /* Custom scrollbar styles ================================================ */
+/* Custom scrollbar styles ================================================ */
 ::-webkit-scrollbar {
   width: 1.2rem;
 }
@@ -195,37 +200,48 @@ body {
     font-size: 1.4rem;
   } */
 
-  .card-b{
+  .card-b {
     width: 22rem;
     height: 36rem;
   }
-  .card-b-I{
+  .card-b-I {
     width: 16rem;
     height: 16rem;
   }
-  .card-b-H{
+  .card-b-H {
     font-size: 1.6rem;
   }
-  .card-b-D{
+  .card-b-D {
     font-size: 1.2rem;
   }
 
-  .counter{
+  .counter {
     width: 18rem;
     height: 18rem;
+    font-size: 1.4rem;
   }
-  
+  .counterNv {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 412px) {
   .section-heading {
     font-size: 4rem;
   }
-  .cards-list{
+  .cards-list {
     display: flex;
     flex-direction: column;
   }
-  .counter{
+
+  #counters {
+    flex-direction: column;
+  }
+  .counter {
     width: 12rem;
     height: 12rem;
+    font-size: 1.2rem;
+  }
+  .counterNv {
+    font-size: 2rem;
   }
 }
