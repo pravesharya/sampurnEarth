@@ -125,8 +125,8 @@ function startCounters() {
 
 window.addEventListener("scroll", startCounters);
 
-const unImgDiv = document.getElementById("un-img");
-const unImg = document.createElement("img");
-unImg.src = (isMobile)? "./assets/un/un-M.png" : "./assets/un/un-D.png";
-unImg.style.width = "100%";
-unImgDiv.appendChild(unImg);
+const unImg = document.getElementById("un-img");
+const unImgPath = document.createElement("img");
+unImgPath.src = (isMobile)? "./assets/un/un-M.png" : "./assets/un/un-D.png";
+unImgPath.style.width = "100%";
+unImg.appendChild(unImgPath);

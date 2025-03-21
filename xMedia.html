@@ -6,17 +6,22 @@
     <title>Media Recognition</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
   </head>
   <body>
     <header id="header" class="CC HF"></header>
+    <div id="currentPage">media</div>
 
     <div class="main-content">
-      <div id="currentPage">media</div>
       <div class="section section-W section-1">
         <h1>Media Recognition Page</h1>
       </div>
       <div class="section section-B"></div>
-      <div class="section section-W"></div>
+      <div class="section section-W">
+        <div id="events" class="carousel"></div>
+
+      </div>
       <div class="section section-B"></div>
       <div class="section section-W"></div>
       <div class="section section-B"></div>
@@ -25,5 +30,7 @@
     <footer id="footer" class="CC HF"></footer>
 
     <script src="header-footer.js"></script>
+    <script src="carousel.js" type="module"></script>
+    <script src="carousel_events.js" type="module"></script>
   </body>
 </html>
