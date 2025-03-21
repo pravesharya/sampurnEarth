@@ -28,7 +28,6 @@
 }
 
 .carousel-img > img{
-    /* max-height: 300px; */
     height: 36rem;
 }
 .carousel-caption{
@@ -64,15 +63,21 @@
     border: black 1px solid;
 }
 
+/* Tab =============================================================  */
 @media (max-width: 1024px) {
     .carousel-r1{
         justify-content: center;
     }
-    .carousel-img > img{
-        height: 20rem;
-    }
     .carousel-nav{
         display: none;
     }
+}
+
+/* Mobile =============================================================  */
+@media (max-width: 412px) {
+    .carousel-img > img{
+        height: 20rem;
+    }
+
 }
   
