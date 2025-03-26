@@ -4,7 +4,8 @@ const events = document.getElementById("events");
 
 let pathsss = [];
 for (let i = 1; i <= 4; i++) {
-    const path = `./assets/events/event-${i}.jpg`;
+    // const path = `./assets/events/event-${i}.jpg`;
+    const path = `./assets/temp.jpg`;
     pathsss.push(path);
 }
 // console.log(pathsss);

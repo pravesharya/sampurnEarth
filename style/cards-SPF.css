@@ -30,6 +30,10 @@
   border: var(--blue1) 1px solid;
   box-shadow: 1rem 1rem 0px var(--blue1);
 }
+.card-Img img{
+  width: 100%;
+  object-fit: cover;
+}
 .card-Text {
   width: 60%;
   padding: 1rem;

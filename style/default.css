@@ -24,6 +24,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  gap:1rem;
 }
 
 body {
@@ -84,6 +86,10 @@ body {
 .section-heading {
   font-size: 5rem;
   font-weight: bold;
+}
+.section-img > img {
+  width: 50%;
+  object-fit: cover;
 }
 .section-text {
   width: 75%;
