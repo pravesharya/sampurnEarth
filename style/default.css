@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  gap:1rem;
+  gap: 1rem;
 }
 
 body {
@@ -80,7 +80,7 @@ body {
 }
 .First {
   height: 100vh;
-  padding: 4rem;
+  padding: 8rem 4rem;
 }
 
 .section-heading {
@@ -100,12 +100,15 @@ body {
 }
 
 .WhiteBG {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 1rem;
   padding: 2rem;
   color: black;
 }
 
+.Text-Left{
+  text-align: left;
+}
 /* Tab =============================================================  */
 @media (max-width: 1024px) {
   .section-heading {
@@ -130,7 +133,6 @@ body {
     font-weight: normal;
     gap: 2rem;
   }
-
 }
 
 /* Custom scrollbar styles ================================================ */

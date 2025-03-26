@@ -1,0 +1,58 @@
+.cards-list {
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.card {
+  width: 80%;
+  height: fit-content;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--blue2);
+  border-radius: 1rem;
+  border: white 2px solid;
+}
+.Reverse {
+    flex-direction: row-reverse;
+  }
+  
+.card-Img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: var(--blue1) 1px solid;
+}
+.card-Img > img {
+  height: 100%;
+  object-fit:fill;
+}
+
+.card-Text {
+  width: 80%;
+  justify-content: space-between;
+}
+.card-Text-D {
+    font-size: 1.2rem;
+}
+.card-Text-D > p{
+    text-align: left;
+}
+.card-Text-H {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.Right {
+transform: rotate(90deg);
+}
+.Left {
+transform: rotate(-90deg);
+}
+
+/* T =============================================================  */
+@media (max-width: 1024px) {
+}
+
+/* M =============================================================  */
+@media (max-width: 412px) {
+}

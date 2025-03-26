@@ -3,14 +3,20 @@
   height: 400px;
 }
 
+.First {
+  height:fit-content;
+  padding: 6rem 4rem;
+}
+
 .activities {
   width: 80%;
-  gap: 2rem;
+  gap: 4rem;
   align-items: flex-start;
 }
 .activity {
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem;
   width: 100%;
   text-align: left;
   font-size: 1.4rem;
@@ -23,62 +29,63 @@
 }
 
 .cards-list {
-    width: 100%;
-    padding: 2rem;
-    gap: 2rem;
-    flex-direction: column;
-  }
-  
-  .card {
-    width: 70%;
-    height: 28rem;
-    padding: 2rem;
-    gap: 2rem;
-    background-color: white ;
-    color: black;
-    border-radius: 1rem;
-    border: white 2px solid;
-    
-  }
-  /* 
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.card {
+  width: 70%;
+  height: 25rem;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  border: white 2px solid;
+}
+/* 
   .card:hover {
     background-color: var(--blue2);
     border: var(--blue1) 2px solid;
   }
    */
-  .card-Img {
-    width: 30rem;
-    height: 20rem;
-    border-radius: 1rem;
-    border: var(--blue1) 1px solid;
-    box-shadow: 1rem 1rem 0px var(--blue1);
-  }
-  .card-Img img{
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .card-Text {
-    flex-direction: column;
-    width: 70%;
-    padding: 2rem;
-    justify-content: left;
-    text-align: left;
-  }
-  .card-Text-H {
-    justify-content: left;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .card-Text-D {
-    width: 100%;
-    font-size: 1.6rem;
-    padding-left: 3rem;
-  }
+.card-Img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 1rem;
+  border: var(--blue1) 1px solid;
+  box-shadow: 1rem 1rem 0px var(--blue2);
+}
+.card-Img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-Text {
+  flex-direction: column;
+  width: 70%;
+  padding: 2rem;
+  justify-content: left;
+  text-align: left;
+}
+.card-Text-H {
+  justify-content: left;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card-Text-D {
+  width: 100%;
+  font-size: 1.6rem;
+  padding-left: 3rem;
+}
 
 /* T =============================================================  */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+}
 
 /* M =============================================================  */
-@media (max-width: 412px) {}
+@media (max-width: 412px) {
+}

@@ -37,8 +37,8 @@
 }
 
 .carousel-nav{
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     background-color: var(--blue1);
 }
@@ -48,8 +48,8 @@
     color: var(--blue1);
 }
 .carousel-nav img{
-    width: 98%;
-    height: 98%;
+    width: 32px;
+    height: 32px;
 }
 
 .carousel-dots{

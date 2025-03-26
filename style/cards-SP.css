@@ -15,6 +15,7 @@
   border: white 2px solid;
 }
 .card:hover {
+  cursor: pointer;
   background-color: var(--blue2);
   border: var(--blue1) 2px solid;
 }
