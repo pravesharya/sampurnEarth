@@ -1,10 +1,5 @@
-.cards-list {
-  width: 100%;
-  padding: 2rem;
-  gap: 2rem;
-}
 
-.card {
+.vmv {
   width: 80%;
   height: fit-content;
   padding: 2rem;
@@ -13,32 +8,29 @@
   border-radius: 1rem;
   border: white 2px solid;
 }
-.Reverse {
-    flex-direction: row-reverse;
-  }
-  
-.card-Img {
+
+.vmv-Img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
   border: var(--blue1) 1px solid;
 }
-.card-Img > img {
+.vmv-Img > img {
   height: 100%;
   object-fit:fill;
 }
 
-.card-Text {
+.vmv-Text {
   width: 80%;
   justify-content: space-between;
 }
-.card-Text-D {
+.vmv-Text-D {
     font-size: 1.2rem;
 }
-.card-Text-D > p{
+.vmv-Text-D > p{
     text-align: left;
 }
-.card-Text-H {
+.vmv-Text-H {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -47,6 +39,95 @@ transform: rotate(90deg);
 }
 .Left {
 transform: rotate(-90deg);
+}
+
+.people {
+  width: 20rem;
+  height: 30rem;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  border: white 2px solid;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+  color: var(--blue1);
+}
+.people:hover {
+  background-color: var(--blue2);
+  cursor: pointer;
+}
+
+.people-Img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: var(--blue1) 1px solid;
+}
+.people-Img > img {
+  height: 100%;
+  object-fit:fill;
+}
+.people-Text {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.people-Name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.people-Des {
+  font-size: 1.2rem;
+}
+
+.award {
+  width: 20rem;
+  height: 30rem;
+  padding: 2rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  border: var(--blue1) 4px solid;
+  background-color: white;
+  color: var(--blue1);
+}
+.award:hover {
+  cursor: pointer;
+  border: var(--green) 4px solid;
+  background-color: var(--blue1);
+  color: white;
+}
+.award-I {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 1rem;
+  border: var(--blue1) 1px solid;
+}
+.award-I > img {
+  height: 100%;
+  object-fit:fill;
+}
+.award-H {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.awardsss{
+  width: 80%;
+}
+.award-Link{
+  width:fit-content;
+  color: black;
+  padding: 0 6px;
+  font-size: 1.4rem;
+  background-color:rgb(223, 247, 255);
+}
+.award-Link:hover{
+  cursor: pointer;
+  background-color: var(--blue2);
+  color: black;
 }
 
 /* T =============================================================  */
