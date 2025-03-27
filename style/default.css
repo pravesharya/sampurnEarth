@@ -41,6 +41,7 @@
   gap: 2rem;
 }
 
+
 body {
   width: 100vw;
   height: 100vh;
@@ -92,11 +93,14 @@ body {
 .Single {
   margin: 3rem 0px;
 }
-.First {
+.First_100{
   height: 100vh;
   padding: 8rem 4rem;
 }
-
+.First {
+  height: fit-content;
+  padding: 6rem 4rem;
+}
 
 .section-heading {
   font-size: 5rem;
@@ -114,6 +118,21 @@ body {
   flex-direction: column;
 }
 
+.btn {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--blue1);
+  border-radius: 50rem;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--green);
+  border: white 1px solid;
+}
+
 .WhiteBG {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 1rem;
@@ -124,6 +143,18 @@ body {
 .Text-Left{
   text-align: left;
 }
+
+.Text-H20{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.Text-D16{
+  font-size: 1.6rem;
+}
+.Text-D12{
+  font-size: 1.2rem;
+}
+
 /* Tab =============================================================  */
 @media (max-width: 1024px) {
   .section-heading {

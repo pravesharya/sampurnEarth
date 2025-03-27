@@ -18,7 +18,10 @@
   font-weight: bold;
 }
 
+/* -------------------------------------------------------------- */
+
 #un{
+  width: 80%;
   margin-top: 2rem;
   padding: 2rem;
 }
@@ -31,6 +34,29 @@
 }
 #un-img{
   padding: 2rem;
+}
+
+/* -------------------------------------------------------------- */
+
+#partners-Array {
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* -------------------------------------------------------------- */
+
+.contact {
+  width: 50%;
+  padding: 2rem;
+  gap: 2rem;
+}
+.contact-Img {
+  width: 50%;
+  padding: 2rem;
+  gap: 2rem;
+}
+.contact-Img > img {
+  width: 30rem;
 }
 
 

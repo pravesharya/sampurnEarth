@@ -1,7 +1,3 @@
-.First {
-  height: fit-content;
-  padding: 6rem 4rem;
-}
 .process-List {
   gap: 2rem;
 }
@@ -31,6 +27,8 @@
   height: 6rem;
   border-radius: 50%;
 }
+
+/* -------------------------------------------------------------- */
 
 .linkedIn {
   width: fit-content;

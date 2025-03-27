@@ -71,7 +71,7 @@ c3.classList.add("counter");
 c3H.classList.add("counterH");
 c3N.classList.add("CC");
 c3Nv.classList.add("counterNv");
-c3H.innerText = "presence in number of cities : " ;
+c3H.innerText = "presence in number of cities : ";
 c3Nv.innerText = `${v3}`;
 c3Ns.innerText = `+`;
 c3.appendChild(c3H);
@@ -108,13 +108,14 @@ function isInViewport(element) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
 function startCounters() {
-  let time=2500;
+  let time = 2500;
   if (isInViewport(counters)) {
     animateCounter(c1Nv, 0, 300000, time);
     animateCounter(c2Nv, 0, 2000, time);
@@ -127,6 +128,30 @@ window.addEventListener("scroll", startCounters);
 
 const unImg = document.getElementById("un-img");
 const unImgPath = document.createElement("img");
-unImgPath.src = (isMobile)? "./assets/un/un-M.png" : "./assets/un/un-D.png";
+unImgPath.src = isMobile ? "./assets/un/un-M.png" : "./assets/un/un-D.png";
 unImgPath.style.width = "100%";
 unImg.appendChild(unImgPath);
+
+const map = document.getElementById("map");
+const iframe = document.createElement("iframe");
+iframe.src =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3754831344595!2d72.90664927395025!3d19.047221852877804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c605df8ed44f%3A0xbe73730abf8cdd35!2sMahinder%20Chambers%20Premises%20Co-Op%20Society%20LTD.!5e0!3m2!1sen!2sin!4v1743078769280!5m2!1sen!2sin";
+iframe.width = "340";
+iframe.height = "220";
+iframe.style.border = "0";
+iframe.allowFullscreen = true;
+iframe.loading = "lazy";
+iframe.referrerPolicy = "no-referrer-when-downgrade";
+map.appendChild(iframe);
+
+const partners = document.getElementById("partners");
+let partnersArray = document.createElement("div");
+partnersArray.classList.add("CC");
+partnersArray.classList.add("partnersArray");
+partners.appendChild(partnersArray);
+for (let i = 0; i < 10; i++) {
+  const partnersImg = document.createElement("img");
+  partnersImg.src = "./assets/temp.jpg";
+  partnersImg.style.width = "12rem";
+  partnersArray.appendChild(partnersImg);
+}

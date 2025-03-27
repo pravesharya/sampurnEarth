@@ -17,6 +17,7 @@
   border: white 4px solid;
 }
 .card-a:hover {
+  cursor: pointer;
   border: var(--green) 4px solid;
 }
 .card-a-I {
@@ -56,6 +57,8 @@
   font-size: 1.2rem;
 }
 
+/* T =============================================================  */
+
 @media (max-width: 1024px) {
   /* 
   .card-a{
@@ -86,6 +89,8 @@
     font-size: 1.2rem;
   }
 }
+
+/* M =============================================================  */
 
 @media (max-width: 412px) {
   .cards-list {
