@@ -7,9 +7,7 @@
 
 .card-a {
   width: 20rem;
-  height: 23rem;
-  padding: 2rem;
-  gap: 1rem;
+  height: 25rem;
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
@@ -26,17 +24,16 @@
   border: var(--blue1) 1px solid;
   border-radius: 1rem;
 }
+.card-a-I img{
+  border-radius: 1rem;
+}
 .card-a-H {
-  font-size: 1.6rem;
-  font-weight: bold;
   color: var(--blue1);
 }
 
 .card-b {
   width: 26rem;
-  height: 44rem;
-  padding: 1rem;
-  gap: 1rem;
+  height: 47rem;
   flex-direction: column;
   justify-content: flex-start;
   border: var(--blue1) 1px solid;
@@ -48,13 +45,9 @@
   border: var(--blue1) 1px solid;
   border-radius: 50%;
 }
-.card-b-H {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.card-b-D {
-  /* font-family: sans-serif; */
-  font-size: 1.2rem;
+.card-b-I > img {
+  height: 90%;
+  border-radius: 50%;
 }
 
 /* T =============================================================  */
@@ -82,12 +75,12 @@
     width: 16rem;
     height: 16rem;
   }
-  .card-b-H {
+  /* .card-b-H {
     font-size: 1.6rem;
   }
   .card-b-D {
     font-size: 1.2rem;
-  }
+  } */
 }
 
 /* M =============================================================  */

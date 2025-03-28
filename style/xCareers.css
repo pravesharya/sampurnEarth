@@ -1,9 +1,5 @@
-.process-List {
-  gap: 2rem;
-}
-
 .process {
-  max-width: 12rem;
+  width: 16rem;
   flex-direction: column;
   border: var(--blue1) 1px solid;
   border-radius: 1rem;
@@ -14,14 +10,9 @@
   height: 8rem;
   border-radius: 50%;
   background-color: var(--blue2);
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
 }
-.process-H {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
 .process-Next {
   width: 6rem;
   height: 6rem;
@@ -30,12 +21,11 @@
 
 /* -------------------------------------------------------------- */
 
-.linkedIn {
+#linkedIn {
   width: fit-content;
   color: black;
-  font-size: 2rem;
 }
-.linkedIn:hover {
+#linkedIn:hover {
   cursor: pointer;
   background-color: var(--blue1);
   border-radius: 1rem;

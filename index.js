@@ -19,6 +19,24 @@ if (isMobile) {
   console.log("Mobile");
 }
 
+
+// INTRO  ================================================================
+
+const intro = document.getElementById("intro");
+intro.src = "./assets/intro.mp4";
+intro.preload = "auto";
+intro.autoplay = true;
+intro.loop = true;
+
+intro.addEventListener("mouseover", () => {
+  intro.pause();
+});
+intro.addEventListener("mouseout", () => {
+  intro.play();
+});
+
+// COUNTER  ================================================================
+
 let v1, v2, v3;
 v1 = v2 = v3 = 0;
 
@@ -30,8 +48,9 @@ const c1Ns = document.createElement("div");
 const c1MT = document.createElement("div");
 c1.classList.add("CC");
 c1.classList.add("counter");
-c1H.classList.add("counterH");
 c1N.classList.add("CC");
+c1N.classList.add("PG10");
+c1H.classList.add("counterH");
 c1Nv.classList.add("counterNv");
 c1H.innerText = "waste diverted from landfills : ";
 c1Nv.innerText = `${v1}`;
@@ -50,8 +69,9 @@ const c2Nv = document.createElement("div");
 const c2Ns = document.createElement("div");
 c2.classList.add("CC");
 c2.classList.add("counter");
-c2H.classList.add("counterH");
 c2N.classList.add("CC");
+c2N.classList.add("PG10");
+c2H.classList.add("counterH");
 c2Nv.classList.add("counterNv");
 c2H.innerText = "waste workers (Safai Sathi) formalized : ";
 c2Nv.innerText = `${v2}`;
@@ -68,8 +88,9 @@ const c3Nv = document.createElement("div");
 const c3Ns = document.createElement("div");
 c3.classList.add("CC");
 c3.classList.add("counter");
-c3H.classList.add("counterH");
 c3N.classList.add("CC");
+c3N.classList.add("PG10");
+c3H.classList.add("counterH");
 c3Nv.classList.add("counterNv");
 c3H.innerText = "presence in number of cities : ";
 c3Nv.innerText = `${v3}`;
@@ -80,10 +101,10 @@ c3N.appendChild(c3Nv);
 c3N.appendChild(c3Ns);
 
 const counters = document.getElementById("counters");
+counters.classList.add("CC");
 counters.appendChild(c1);
 counters.appendChild(c2);
 counters.appendChild(c3);
-counters.style.gap = isMobile ? "1rem" : "2rem";
 
 function animateCounter(element, start, end, duration) {
   let startTime = null;
@@ -126,6 +147,8 @@ function startCounters() {
 
 window.addEventListener("scroll", startCounters);
 
+// United Nations  ================================================================
+
 const unImg = document.getElementById("un-img");
 const unImgPath = document.createElement("img");
 unImgPath.src = isMobile ? "./assets/un/un-M.png" : "./assets/un/un-D.png";
@@ -147,6 +170,7 @@ map.appendChild(iframe);
 const partners = document.getElementById("partners");
 let partnersArray = document.createElement("div");
 partnersArray.classList.add("CC");
+partnersArray.classList.add("PG10");
 partnersArray.classList.add("partnersArray");
 partners.appendChild(partnersArray);
 for (let i = 0; i < 10; i++) {

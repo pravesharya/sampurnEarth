@@ -1,9 +1,19 @@
-#counters{
-  padding: 2rem;
+#intro{
+  height: 80%;
+  object-fit: contain;
+  border : white 4px solid ;
 }
+#intro:hover{
+  border : var(--blue1) 4px solid;
+}
+
+/* -------------------------------------------------------------- */
+
 .counter {
   width: 20rem;
   height: 20rem;
+  gap: 0px;
+  padding: 0px;
   background-color: white;
   border-radius: 50%;
   color: black;
@@ -12,8 +22,12 @@
 }
 .counterH {
   width: 70%;
+  padding: 0px;
+  gap: 0px;
 }
 .counterNv {
+  padding: 0px;
+  gap: 0px;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -23,7 +37,6 @@
 #un{
   width: 80%;
   margin-top: 2rem;
-  padding: 2rem;
 }
 #un-heading > h2 {
   font-size: 4rem;
@@ -31,9 +44,6 @@
 }
 #un-heading > h4 {
   font-size: 2rem;
-}
-#un-img{
-  padding: 2rem;
 }
 
 /* -------------------------------------------------------------- */
@@ -47,13 +57,9 @@
 
 .contact {
   width: 50%;
-  padding: 2rem;
-  gap: 2rem;
 }
 .contact-Img {
   width: 50%;
-  padding: 2rem;
-  gap: 2rem;
 }
 .contact-Img > img {
   width: 30rem;
