@@ -47,6 +47,10 @@
   padding: 1rem;
   gap: 1rem;
 }
+.PG_0 {
+  padding: 0px;
+  gap: 0px;
+}
 
 .Rotate-R {
   transform: rotate(90deg);
@@ -108,8 +112,7 @@ img {
   margin: 3rem 0px;
 }
 .First_100 {
-  height: 100vh;
-  padding: 8rem 4rem;
+  height: calc(100vh - 8rem);
 }
 .First {
   height: fit-content;
