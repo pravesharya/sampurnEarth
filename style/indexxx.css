@@ -1,0 +1,67 @@
+.cards-list {
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-a {
+  width: 20rem;
+  height: 25rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+  border: white 4px solid;
+}
+.card-a:hover {
+  cursor: pointer;
+  border: var(--green) 4px solid;
+}
+.card-a-I {
+  width: 100%;
+  height: 14rem;
+  border: var(--blue1) 1px solid;
+  border-radius: 1rem;
+}
+.card-a-I img {
+  border-radius: 1rem;
+}
+.card-a:hover .card-a-I img {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.card-a-H {
+  color: var(--blue1);
+}
+
+.card-b {
+  width: 26rem;
+  height: 47rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: var(--blue1) 1px solid;
+  border-radius: 1rem;
+}
+.card-b-I {
+  width: 20rem;
+  height: 20rem;
+  border: var(--blue1) 1px solid;
+  border-radius: 50%;
+}
+.card-b-I > img {
+  height: 90%;
+  border-radius: 50%;
+}
+
+/* Tab | Mobile =============================================================  */
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 430px) {
+  .card-a, .card-b {
+    width: 24rem;
+    height: fit-content;
+  }
+}

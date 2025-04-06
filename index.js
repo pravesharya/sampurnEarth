@@ -23,10 +23,18 @@ if (isMobile) {
 // INTRO  ================================================================
 
 const intro = document.getElementById("intro");
-intro.src = "./assets/intro.mp4";
+intro.src = "./assets/home/intro.mp4";
 intro.preload = "auto";
 intro.autoplay = true;
 intro.loop = true;
+
+intro.addEventListener("loadedmetadata", () => {
+  console.log("Video metadata loaded successfully.");
+});
+
+intro.addEventListener("error", (e) => {
+  console.error("Error loading video:", e);
+});
 
 intro.addEventListener("mouseover", () => {
   intro.pause();
@@ -151,10 +159,11 @@ window.addEventListener("scroll", startCounters);
 
 const unImg = document.getElementById("un-img");
 const unImgPath = document.createElement("img");
-unImgPath.src = isMobile ? "./assets/un/un-M.png" : "./assets/un/un-D.png";
+unImgPath.src = isMobile ? "./assets/home/un-M.png" : "./assets/home/un-D.png";
 unImgPath.style.width = "100%";
 unImg.appendChild(unImgPath);
 
+// Contact  ================================================================
 const map = document.getElementById("map");
 const iframe = document.createElement("iframe");
 iframe.src =
@@ -167,15 +176,39 @@ iframe.loading = "lazy";
 iframe.referrerPolicy = "no-referrer-when-downgrade";
 map.appendChild(iframe);
 
+
+// Partners  ================================================================
 const partners = document.getElementById("partners");
-let partnersArray = document.createElement("div");
-partnersArray.classList.add("CC");
-partnersArray.classList.add("PG10");
-partnersArray.classList.add("partnersArray");
-partners.appendChild(partnersArray);
-for (let i = 0; i < 10; i++) {
-  const partnersImg = document.createElement("img");
-  partnersImg.src = "./assets/temp.jpg";
-  partnersImg.style.width = "12rem";
-  partnersArray.appendChild(partnersImg);
+partners.classList.add("CC");
+partners.classList.add("PG10");
+
+for (let i = 1; i < 12; i++) {
+  const partner = document.createElement("div");
+  partner.classList.add("partner");
+  partner.classList.add("CC");
+  partner.classList.add("PG_0");
+  const img = document.createElement("img");
+  img.src = `./assets/home/p${i}.png`;
+  partner.appendChild(img);
+  partners.appendChild(partner);
 }
+
+// function animatePartners() {
+//   let scrollAmount = 0;
+//   const scrollSpeed = 1; // Adjust speed as needed
+//   const partnersWidth = partnersArray.scrollWidth;
+//   const containerWidth = partners.offsetWidth;
+
+//   function scroll() {
+//     scrollAmount += scrollSpeed;
+//     if (scrollAmount >= partnersWidth) {
+//       scrollAmount = -containerWidth; // Reset to create a seamless loop
+//     }
+//     partnersArray.style.transform = `translateX(-${scrollAmount}px)`;
+//     requestAnimationFrame(scroll);
+//   }
+
+//   scroll();
+// }
+
+// animatePartners();

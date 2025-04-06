@@ -112,31 +112,31 @@ function createHeader() {
   }
 
   document.getElementById("home").addEventListener("click", () => {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   });
 
   document.getElementById("services").addEventListener("click", () => {
-    window.location.href = "../pages/xServices.html";
+    window.location.href = "xServices.html";
   });
 
   document.getElementById("projects").addEventListener("click", () => {
-    window.location.href = "../pages/xProjects.html";
+    window.location.href = "xProjects.html";
   });
 
   document.getElementById("media").addEventListener("click", () => {
-    window.location.href = "../pages/xMedia.html";
+    window.location.href = "xMedia.html";
   });
 
   document.getElementById("foundation").addEventListener("click", () => {
-    window.location.href = "../pages/xFoundation.html";
+    window.location.href = "xFoundation.html";
   });
 
   document.getElementById("careers").addEventListener("click", () => {
-    window.location.href = "../pages/xCareers.html";
+    window.location.href = "xCareers.html";
   });
 
   document.getElementById("about").addEventListener("click", () => {
-    window.location.href = "../pages/xAbout.html";
+    window.location.href = "xAbout.html";
   });
 }
 createHeader();
