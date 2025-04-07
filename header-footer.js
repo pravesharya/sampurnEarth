@@ -86,6 +86,7 @@ function createHeader() {
     closeBtn.classList.add("BTN_30");
     closeBtn.classList.add("PG_0");
     closeBtn.classList.add("close");
+    closeBtn.classList.add("close-R");
     closeBtn.addEventListener("click", () => {
       document.body.removeChild(overlay);
       panel.style.right = "-100%";

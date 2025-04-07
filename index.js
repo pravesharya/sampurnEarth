@@ -176,6 +176,15 @@ iframe.loading = "lazy";
 iframe.referrerPolicy = "no-referrer-when-downgrade";
 map.appendChild(iframe);
 
+const call = document.getElementById("contact-call");
+const email = document.getElementById("contact-email");
+
+call.addEventListener("click", () => {
+  window.location.href = "tel:02241209120";
+});
+email.addEventListener("click", () => {
+  window.location.href = "mailto:inquiry.sespl@gmail.com";
+});
 
 // Partners  ================================================================
 const partners = document.getElementById("partners");

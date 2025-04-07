@@ -1,4 +1,9 @@
-
+#hero{
+  background-image: url("../assets/xAbout/BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
 .vmv {
   width: 80%;
   height: fit-content;
@@ -25,8 +30,36 @@
 }
 
 /* -------------------------------------------------------------- */
+#key_Overlay{
+  display: none;
+}
+#key_Detailed{
+  position: relative;
+  top: 100%;
+  left : 25%;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  color: black;
+  border: var(--blue1) 4px solid;
+  border-radius: 1rem;
+  transition: all 1000ms ease;
+}
+.kd-L{
+  width:40%;
+}
+.kd-R{
+  width:60%;
+}
+.kd-Img{
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: var(--blue1) 1px solid;
+}
 
-.people {
+
+.key {
   width: 22rem;
   height: 28rem;
   border-radius: 1rem;
@@ -35,24 +68,25 @@
   background-color: white;
   color: var(--blue1);
 }
-.people:hover {
+.key:hover {
   background-color: var(--blue2);
   cursor: pointer;
 }
 
-.people-Img {
+.key-Img {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
   border: var(--blue1) 1px solid;
+  overflow: hidden;
 }
 
-.people:hover .people-Img img {
+.key:hover .key-Img img {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
 
-.people-Text {
+.key-Text {
   width: 80%;
   justify-content: space-between;
 }
@@ -60,27 +94,32 @@
 /* -------------------------------------------------------------- */
 
 .award {
-  width: 20rem;
+  width: 24rem;
   height: 30rem;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 1rem;
-  border: var(--blue1) 4px solid;
+  border: var(--blue1) 2px solid;
   background-color: white;
   color: var(--blue1);
 }
 .award:hover {
-  cursor: pointer;
-  border: var(--green) 4px solid;
-  background-color: var(--blue1);
-  color: white;
+  /* background-color: var(--blue2); */
+  /* color: white; */
+  font-weight: bold;
 }
-.award-I {
-  width: 16rem;
+.award-Img {
+  width: 20rem;
   height: 16rem;
   border-radius: 1rem;
-  border: var(--blue1) 1px solid;
+  border: var(--blue1) 2px solid;
+  overflow: hidden;
 }
+.award:hover .award-Img img {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
 
 /* -------------------------------------------------------------- */
 
@@ -95,9 +134,9 @@
   background-color:rgb(223, 247, 255);
 }
 .award-Link:hover{
-  cursor: pointer;
   background-color: var(--blue1);
   color: white;
+  font-weight: bold;
 }
 
 /* -------------------------------------------------------------- */
@@ -111,7 +150,7 @@
   padding: 2rem;
 }
 .investor-Img > img {
-  width: 30rem;
+  width: 20rem;
 }
 .investor-Names{
   font-size: 2rem;

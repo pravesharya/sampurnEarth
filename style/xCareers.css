@@ -29,11 +29,11 @@
 
 /* -------------------------------------------------------------- */
 
-#linkedIn {
+#jobs {
   width: fit-content;
   color: black;
 }
-#linkedIn:hover {
+#jobs:hover {
   cursor: pointer;
   background-color: var(--blue1);
   border-radius: 1rem;
