@@ -22,11 +22,12 @@ const logoH_Img = document.createElement("img");
 function createHeader() {
   logoH_Img.src = "./assets/logo-h.png";
   logoH_Img.alt = "Company Logo";
+  
   logoH.appendChild(logoH_Img);
+  header.appendChild(logoH);
+  
   logoH.classList.add("pointer");
   if(isMobile) logoH_Img.style.width = "80%";
-  header.appendChild(logoH);
-
 
   const links = document.createElement("div");
   const pages = [
@@ -41,7 +42,6 @@ function createHeader() {
   for (let i = 0; i < pages.length; i++) {
     const page = document.createElement("div");
     page.innerHTML = pages[i];
-    // page.id = pages[i].toLowerCase().replace(/\s+/g, "-");
     page.id = pages[i].toLowerCase().split(" ")[0];
     console.log(page.id);
 
@@ -65,8 +65,6 @@ function createHeader() {
     const menuBtn = document.createElement("div");
     const menuBtnImg = document.createElement("img");
     menuBtnImg.src = "./assets/menu.svg";
-    // menuBtnImg.style.width = "90%";
-    // menuBtnImg.style.height = "90%";
     menuBtn.appendChild(menuBtnImg);
     menuBtn.classList.add("CC");
     menuBtn.classList.add("BTN_30");
@@ -84,7 +82,6 @@ function createHeader() {
     closeBtnImg.style.width = "60%";
     closeBtn.appendChild(closeBtnImg);
 
-    // closeBtn.innerHTML = "X";
     closeBtn.classList.add("CC");
     closeBtn.classList.add("BTN_30");
     closeBtn.classList.add("PG_0");
@@ -103,6 +100,7 @@ function createHeader() {
     header.appendChild(links);
   }
 
+  // Hight light current page ---------------------------------------------------------
   if (isMobile) {
     document.getElementById(currentPage).style.backgroundColor = "var(--green)";
   } else {
@@ -111,32 +109,35 @@ function createHeader() {
     document.getElementById(currentPage).style.color = "var(--green)";
   }
 
-  document.getElementById("home").addEventListener("click", () => {
-    window.location.href = "index.html";
-  });
+  // Menu pages ---------------------------------------------------------
+  // document.getElementById("home").addEventListener("click", () => {
+  //   window.location.href = "./index.html";
+  // });
+  
+  document.getElementById("home").addEventListener("click", HOME);
 
   document.getElementById("services").addEventListener("click", () => {
-    window.location.href = "../pages/xServices.html";
+    window.location.href = "./xServices.html";
   });
 
   document.getElementById("projects").addEventListener("click", () => {
-    window.location.href = "../pages/xProjects.html";
+    window.location.href = "./xProjects.html";
   });
 
   document.getElementById("media").addEventListener("click", () => {
-    window.location.href = "../pages/xMedia.html";
+    window.location.href = "./xMedia.html";
   });
 
   document.getElementById("foundation").addEventListener("click", () => {
-    window.location.href = "../pages/xFoundation.html";
+    window.location.href = "./xFoundation.html";
   });
 
   document.getElementById("careers").addEventListener("click", () => {
-    window.location.href = "../pages/xCareers.html";
+    window.location.href = "./xCareers.html";
   });
 
   document.getElementById("about").addEventListener("click", () => {
-    window.location.href = "../pages/xAbout.html";
+    window.location.href = "./xAbout.html";
   });
 }
 createHeader();
@@ -213,9 +214,9 @@ function createFooter(params) {
 createFooter();
 // ============================================================================
 
-logoH.addEventListener("click", () => {
-  window.location.href = "index.html";
-});
-logoF.addEventListener("click", () => {
-  window.location.href = "index.html";
-});
+logoH.addEventListener("click", HOME);
+logoF.addEventListener("click", HOME);
+
+function HOME() {
+  window.location.href = "./index.html";
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Recognition</title>
-    <link rel="stylesheet" href="../style/default.css" />
+    <link rel="stylesheet" href="./style/default.css" />
     <link rel="stylesheet" href="./style/xMedia.css" />
     <link rel="stylesheet" href="./style/carousel.css" />
     <link rel="stylesheet" href="./style/header-footer.css" />
@@ -14,7 +14,6 @@
     <div id="currentPage">media</div>
 
     <div class="main-content">
-
       <div class="section section-W First CC" id="hero">
         <div class="section-heading WhiteBG">Media Recognition</div>
         <div class="section-text CC WhiteBG">
@@ -61,13 +60,13 @@
         </div>
         <div class="CC" id="vr2">
           <div id="v2" class="vid-Small CC PG_0">
-            <img src="./assets/xMedia/v2.jpg" alt="">
+            <img src="./assets/xMedia/v2.jpg" alt="" />
           </div>
           <div id="v3" class="vid-Small CC PG_0">
-            <img src="./assets/xMedia/v3.jpg" alt="">
+            <img src="./assets/xMedia/v3.jpg" alt="" />
           </div>
           <div id="v4" class="vid-Small CC PG_0">
-            <img src="./assets/xMedia/v4.jpg" alt="">
+            <img src="./assets/xMedia/v4.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -78,13 +77,13 @@
 
       <div class="section section-B CC">
         <div class="section-heading">Press</div>
-        
+
         <div class="CC" id="press">
           <div class="CC PG10" id="press-Img">
             <img src="./assets/xMedia/press.png" alt="press-image" />
           </div>
           <div class="CC" id="press-Text">
-            <div class="press-Link" id="link_1" >
+            <div class="press-Link" id="link_1">
               For this environmental solutions company, Mumbai's trash is
               treasure Forbes India (Jul 26, 2017)
             </div>
@@ -117,9 +116,7 @@
             </div>
           </div>
         </div>
-      
       </div>
-
     </div>
 
     <footer id="footer" class="CC HF"></footer>
@@ -127,6 +124,20 @@
     <script src="header-footer.js"></script>
     <script src="carousel.js" type="module"></script>
     <script src="carousel_events.js" type="module"></script>
-    <script src="xMedia.js"></script>
+    <script>
+      const v2 = document.getElementById("v2");
+      const v3 = document.getElementById("v3");
+      const v4 = document.getElementById("v4");
+
+      v2.addEventListener("click", () => {
+        window.open("https://www.youtube.com/watch?v=JV4tF6yAsnw", "_blank");
+      });
+      v3.addEventListener("click", () => {
+        window.open("https://www.youtube.com/watch?v=Uf7l3Y73mgs", "_blank");
+      });
+      v4.addEventListener("click", () => {
+        window.open("https://www.youtube.com/watch?v=qJ1gx5x1UNo", "_blank");
+      });
+    </script>
   </body>
 </html>

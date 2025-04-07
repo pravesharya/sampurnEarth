@@ -41,6 +41,7 @@
     height: 34px;
     border-radius: 50%;
     background-color: var(--blue1);
+    border: var(--blue1) 2px solid;
 }
 .carousel-nav:hover{
     border: white 2px solid;
