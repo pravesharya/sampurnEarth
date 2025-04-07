@@ -23,6 +23,7 @@
   height: 14rem;
   border: var(--blue1) 1px solid;
   border-radius: 1rem;
+  overflow: hidden;
 }
 .card-a-I img {
   border-radius: 1rem;

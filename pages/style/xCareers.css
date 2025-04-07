@@ -1,3 +1,7 @@
+#hero{
+  width: 100rem;
+}
+
 #hiring {
   width: 80%;
 }
@@ -38,6 +42,10 @@
 
 /* T =============================================================  */
 @media (max-width: 1024px) {
+  #hero{
+    width: 80%;
+  }
+
   .process-N {
     width: 6rem;
     height: 6rem;

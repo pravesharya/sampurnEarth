@@ -1,3 +1,9 @@
+#hero{
+  width: 100rem;
+  border-radius: 1rem;
+  border: var(--blue1) 2px solid;
+}
+
 #green-worrior {
   width: 700px;
   height: 400px;
@@ -37,9 +43,16 @@
   width: 30rem;
   height: 20rem;
   border-radius: 1rem;
+  background-color: white;
   border: var(--blue1) 1px solid;
   box-shadow: 1rem 1rem 0px var(--blue2);
+  overflow: hidden;
 }
+/* .product:hover .product-Img img{
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+} */
+
 .product-Text {
   flex-direction: column;
   width: 70%;
@@ -58,6 +71,9 @@
 /* T =============================================================  */
 
 @media (max-width: 820px) {
+  #hero{
+    width: 90%;
+  }
   .activities {
     flex-direction: column;
   }

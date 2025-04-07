@@ -3,7 +3,7 @@ const isMobile =
   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
   window.innerWidth < window.innerHeight;
 
-function createCarousel(pathsss, captionsss) {
+function createCarousel(pathsss, captionsss,time = 2500) {
   let totalImages = pathsss.length;
 
   const carousel = document.createElement("div");
@@ -108,7 +108,7 @@ function createCarousel(pathsss, captionsss) {
 
   setInterval(() => {
     nextImage();
-  }, 3500);
+  }, time);
 
   // console.log(carousel);
   return carousel;
