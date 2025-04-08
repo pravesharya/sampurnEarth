@@ -75,14 +75,29 @@ function keyPerson(x) {
   kd_Detail.innerHTML = people[x].description;
   kd_Img.src = people[x].image;
 
+  const pH = key_Overlay.offsetHeight;
+  const cH = key_Detailed.offsetHeight;
+  const newTop = pH - cH; 
+  console.log(pH, cH, newTop);
+  
   key_Overlay.style.display = "block";
   setTimeout(() => {
-    key_Detailed.style.top = `20%`;
+    // key_Detailed.style.top = `${newTop}px`;
+    // (isMobile)? key_Detailed.style.bottom = `20%`: key_Detailed.style.bottom = "25%";
+    
+    console.log(window.innerWidth);
+    if(window.innerWidth <= "540"){
+      key_Detailed.style.top = "20%";
+    } 
+    else if(window.innerWidth > "540" && window.innerWidth <= "1024" ){
+      key_Detailed.style.top = "30%";
+    }
   }, 50);
 }
 
 const kd_close = document.getElementById("kd_close");
 kd_close.addEventListener("click", () => {
+  key_Detailed.style.position = "relative";
   key_Detailed.style.top = "100%";
   key_Overlay.style.display = "none";
 });
