@@ -1,3 +1,5 @@
+import { createCarousel } from "./carousel.js";
+
 window.addEventListener("resize", () => {
   window.location.reload();
 });
@@ -18,7 +20,6 @@ const isMobile =
 if (isMobile) {
   console.log("Mobile");
 }
-
 
 // INTRO  ================================================================
 
@@ -191,33 +192,29 @@ const partners = document.getElementById("partners");
 partners.classList.add("CC");
 partners.classList.add("PG10");
 
-for (let i = 1; i < 12; i++) {
-  const partner = document.createElement("div");
-  partner.classList.add("partner");
-  partner.classList.add("CC");
-  partner.classList.add("PG_0");
-  const img = document.createElement("img");
-  img.src = `./assets/home/p${i}.png`;
-  partner.appendChild(img);
-  partners.appendChild(partner);
+if (isMobile) {
+  partners.style.padding = "0px";
+  let pathsss = [];
+  for (let i = 1; i <= 11; i++) {
+    const path = `./assets/Home/p${i}.png`;
+    pathsss.push(path);
+  }
+  const carousel = createCarousel(pathsss, 0, 1000);
+  partners.appendChild(carousel);
+  
+  const partnerImg = document.querySelector(".carousel-img");
+  partnerImg.style.width = "26rem";
+  partnerImg.style.height = "20rem";
 }
-
-// function animatePartners() {
-//   let scrollAmount = 0;
-//   const scrollSpeed = 1; // Adjust speed as needed
-//   const partnersWidth = partnersArray.scrollWidth;
-//   const containerWidth = partners.offsetWidth;
-
-//   function scroll() {
-//     scrollAmount += scrollSpeed;
-//     if (scrollAmount >= partnersWidth) {
-//       scrollAmount = -containerWidth; // Reset to create a seamless loop
-//     }
-//     partnersArray.style.transform = `translateX(-${scrollAmount}px)`;
-//     requestAnimationFrame(scroll);
-//   }
-
-//   scroll();
-// }
-
-// animatePartners();
+else{
+  for (let i = 1; i < 12; i++) {
+    const partner = document.createElement("div");
+    partner.classList.add("partner");
+    partner.classList.add("CC");
+    partner.classList.add("PG_0");
+    const img = document.createElement("img");
+    img.src = `./assets/home/p${i}.png`;
+    partner.appendChild(img);
+    partners.appendChild(partner);
+  }
+}

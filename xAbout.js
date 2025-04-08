@@ -69,15 +69,16 @@ let people = [
   },
 ];
 function keyPerson(x) {
-  key_Overlay.style.display = "block";
-  setTimeout(() => {
-    key_Detailed.style.top = "30%";
-  }, 50);
-
+  
   kd_Name.innerHTML = people[x].name;
   kd_Role.innerHTML = people[x].title;
   kd_Detail.innerHTML = people[x].description;
   kd_Img.src = people[x].image;
+
+  key_Overlay.style.display = "block";
+  setTimeout(() => {
+    key_Detailed.style.top = `20%`;
+  }, 50);
 }
 
 const kd_close = document.getElementById("kd_close");

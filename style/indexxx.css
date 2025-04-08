@@ -58,11 +58,17 @@
 /* Tab | Mobile =============================================================  */
 
 @media (max-width: 1024px) {
+  #whyChooseUs {
+    width: 80%;
+  }
 }
 
 @media (max-width: 430px) {
+  #whyChooseUs{
+    width: 100%;
+  }
   .card-a, .card-b {
-    width: 24rem;
+    width: 80%;
     height: fit-content;
   }
 }

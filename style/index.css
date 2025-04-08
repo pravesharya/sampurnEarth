@@ -67,6 +67,10 @@
 }
 
 /* -------------------------------------------------------------- */
+#partners{
+  width: 80%;
+  flex-wrap: wrap;
+}
 
 .partner {
   background-color: white;
@@ -88,10 +92,6 @@
     height: auto;
   }
 
-  #whyChooseUs {
-    width: 80%;
-  }
-
   .counter {
     width: 19rem;
     height: 19rem;
@@ -102,8 +102,20 @@
 }
 
 @media (max-width: 540px) {
+  #contactSection{
+    padding: 0px;
+  }
   #contactDiv {
     flex-direction: column;
+    padding: 0px;
+  }
+  #contact-Img{
+    width: 100%;
+    padding: 0px;
+  background-size: 100%;
+  background-position:top;
+
+
   }
 }
 
@@ -118,5 +130,15 @@
   }
   .counterNv {
     font-size: 2.6rem;
+  }
+
+
+
+  #partners{
+    width: 100%;
+    flex-wrap:nowrap;
+  }
+  #partners img{
+    width: 3rem;
   }
 }

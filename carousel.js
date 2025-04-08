@@ -1,9 +1,8 @@
-
 const isMobile =
   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
   window.innerWidth < window.innerHeight;
 
-function createCarousel(pathsss, captionsss,time = 2500) {
+function createCarousel(pathsss, captionsss, time = 2500) {
   let totalImages = pathsss.length;
 
   const carousel = document.createElement("div");
@@ -17,6 +16,7 @@ function createCarousel(pathsss, captionsss,time = 2500) {
   row1.classList.add("CC");
   row2.classList.add("carousel-r2");
   row2.classList.add("CC");
+  row2.classList.add("PG_0");
 
   const carouselP = document.createElement("div");
   const carouselN = document.createElement("div");
@@ -44,7 +44,7 @@ function createCarousel(pathsss, captionsss,time = 2500) {
   for (let i = 0; i < totalImages; i++) {
     const img = document.createElement("img");
     img.src = pathsss[i];
-    if(isMobile) img.style.width = "100%";
+    if (isMobile) img.style.width = "100%";
     images.push(img);
 
     const dot = document.createElement("div");
@@ -56,9 +56,14 @@ function createCarousel(pathsss, captionsss,time = 2500) {
   carouselMidImg.appendChild(images[currentIndex]);
   carouselMidImg.classList.add("carousel-img");
   carouselMidImg.classList.add("CC");
-  carouselMidCap.innerHTML = captionsss[currentIndex];
-  carouselMidCap.classList.add("carousel-caption");
-  carouselMidCap.classList.add("CC");
+  if (captionsss != 0) {
+    carouselMidCap.innerHTML = captionsss[currentIndex];
+    carouselMidCap.classList.add("carousel-caption");
+    carouselMidCap.classList.add("CC");
+  }
+  else{
+    carouselMidCap.style.display = "none";
+  }
   refreshCarousel(currentIndex);
 
   carouselMid.appendChild(carouselMidImg);
@@ -110,7 +115,6 @@ function createCarousel(pathsss, captionsss,time = 2500) {
     nextImage();
   }, time);
 
-  // console.log(carousel);
   return carousel;
 }
 

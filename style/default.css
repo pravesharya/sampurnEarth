@@ -213,6 +213,9 @@ img {
 .Text-Left {
   text-align: left;
 }
+.Text-White {
+  color: white;
+}
 
 .H20 {
   font-size: 2rem;
