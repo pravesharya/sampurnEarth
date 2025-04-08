@@ -2,32 +2,36 @@ window.addEventListener("resize", () => {
   window.location.reload();
 });
 
+function HOME() {
+  window.location.href = "./index.html";
+}
 
 let currentPage = document.getElementById("currentPage").innerHTML;
 console.log("Current page : ", currentPage);
-
-const header = document.getElementById("header");
-const footer = document.getElementById("footer");
 
 const isMobile =
   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
   window.innerWidth < window.innerHeight;
 
+// Header ==============================================================================
+
+const header = document.getElementById("header");
 header.classList.add("CC");
 header.classList.add("HF");
 
 const logoH = document.createElement("div");
 const logoH_Img = document.createElement("img");
+logoH.addEventListener("click", HOME);
 
 function createHeader() {
   logoH_Img.src = "./assets/logo-h.png";
   logoH_Img.alt = "Company Logo";
-  
+
   logoH.appendChild(logoH_Img);
   header.appendChild(logoH);
-  
+
   logoH.classList.add("pointer");
-  if(isMobile) logoH_Img.style.width = "80%";
+  if (isMobile) logoH_Img.style.width = "80%";
 
   const links = document.createElement("div");
   const pages = [
@@ -111,10 +115,7 @@ function createHeader() {
   }
 
   // Menu pages ---------------------------------------------------------
-  // document.getElementById("home").addEventListener("click", () => {
-  //   window.location.href = "./index.html";
-  // });
-  
+
   document.getElementById("home").addEventListener("click", HOME);
 
   document.getElementById("services").addEventListener("click", () => {
@@ -144,11 +145,15 @@ function createHeader() {
 createHeader();
 
 // Footer ============================================================================
+const footer = document.getElementById("footer");
+footer.classList.add("CC");
+footer.classList.add("HF");
 
 const logoF = document.createElement("div");
 const logoF_Img = document.createElement("img");
+logoF.addEventListener("click", HOME);
 
-function createFooter(params) {
+function createFooter() {
   logoF_Img.src = isMobile ? "./assets/logo-fM.png" : "./assets/logo-f.png";
   logoF_Img.alt = "Company Logo";
   logoF_Img.style.width = "80%";
@@ -165,12 +170,7 @@ function createFooter(params) {
   socialsss.classList.add("PG_0");
   socialsss.style.gap = "6px";
 
-  const socialsList = [
-    "youtube",
-    "facebook",
-    "instagram",
-    "linkedin",
-  ];
+  const socialsList = ["youtube", "facebook", "instagram", "linkedin"];
   for (let i = 0; i < socialsList.length; i++) {
     const social = document.createElement("div");
     social.classList.add("CC");
@@ -189,7 +189,10 @@ function createFooter(params) {
   footer.appendChild(socialsss);
 
   document.getElementById("youtube").addEventListener("click", () => {
-    window.open("https://www.youtube.com/@GreenWarriors-Goa?app=desktop", "_blank");
+    window.open(
+      "https://www.youtube.com/@GreenWarriors-Goa?app=desktop",
+      "_blank"
+    );
   });
 
   document.getElementById("facebook").addEventListener("click", () => {
@@ -197,23 +200,23 @@ function createFooter(params) {
   });
 
   document.getElementById("instagram").addEventListener("click", () => {
-    window.open("https://www.instagram.com/sampurnearth_f0undati0n?igsh=dTJsOGNwMTBnYnIz", "_blank");
+    window.open(
+      "https://www.instagram.com/sampurnearth_f0undati0n?igsh=dTJsOGNwMTBnYnIz",
+      "_blank"
+    );
   });
 
   document.getElementById("linkedin").addEventListener("click", () => {
-    window.open("https://www.linkedin.com/company/sampurn-e-arth-environment-solutions-pvt--ltd-/", "_blank");
+    window.open(
+      "https://www.linkedin.com/company/sampurn-e-arth-environment-solutions-pvt--ltd-/",
+      "_blank"
+    );
   });
-
-  let hfPadding = isMobile ? "0 20px" : "0 40px";
-  header.style.padding = hfPadding;
-  footer.style.padding = hfPadding;
 }
 createFooter();
+
 // ============================================================================
 
-logoH.addEventListener("click", HOME);
-logoF.addEventListener("click", HOME);
-
-function HOME() {
-  window.location.href = "./index.html";
-}
+let hfPadding = isMobile ? "0 20px" : "0 40px";
+header.style.padding = hfPadding;
+footer.style.padding = hfPadding;
