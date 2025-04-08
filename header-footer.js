@@ -189,23 +189,19 @@ function createFooter(params) {
   footer.appendChild(socialsss);
 
   document.getElementById("youtube").addEventListener("click", () => {
-    window.open("https://www.youtube.com", "_blank");
+    window.open("https://www.youtube.com/@GreenWarriors-Goa?app=desktop", "_blank");
   });
 
   document.getElementById("facebook").addEventListener("click", () => {
-    window.open("https://www.youtube.com", "_blank");
-  });
-
-  document.getElementById("twitter").addEventListener("click", () => {
-    window.open("https://www.youtube.com", "_blank");
+    window.open("https://www.facebook.com/Sampurnearth/photos", "_blank");
   });
 
   document.getElementById("instagram").addEventListener("click", () => {
-    window.open("https://www.youtube.com", "_blank");
+    window.open("https://www.instagram.com/sampurnearth_f0undati0n?igsh=dTJsOGNwMTBnYnIz", "_blank");
   });
 
   document.getElementById("linkedin").addEventListener("click", () => {
-    window.open("https://www.youtube.com", "_blank");
+    window.open("https://www.linkedin.com/company/sampurn-e-arth-environment-solutions-pvt--ltd-/", "_blank");
   });
 
   let hfPadding = isMobile ? "0 20px" : "0 40px";
