@@ -49,6 +49,7 @@
 }
 .kd-R {
   width: 60%;
+  padding: 4rem;
 }
 .kd-Img {
   width: 16rem;
@@ -93,13 +94,14 @@
 
 .award {
   width: 24rem;
-  height: 30rem;
+  height: 32rem;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 1rem;
-  border: var(--blue1) 2px solid;
+  border: var(--blue2) 2px solid;
   background-color: white;
   color: var(--blue1);
+  font-weight: bold;
 }
 /* 
 .award:hover {
@@ -112,7 +114,7 @@
   width: 20rem;
   height: 16rem;
   border-radius: 1rem;
-  border: var(--blue1) 2px solid;
+  border: var(--blue2) 2px solid;
   overflow: hidden;
 }
 .award:hover .award-Img img {
@@ -183,6 +185,7 @@
   }
   .kd-R {
     width: 80%;
+    padding: 1rem;
   }
   #kd_Detail {
     text-align: center;
@@ -250,5 +253,8 @@
   #kd_Detail {
     font-size: 1.2rem;
   }
-
+  .kd-R {
+    width: 90%;
+    padding: 0px;
+  }
 }
