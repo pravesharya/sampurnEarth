@@ -168,7 +168,7 @@ unImg.appendChild(unImgPath);
 const map = document.getElementById("map");
 const iframe = document.createElement("iframe");
 iframe.src =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3754831344595!2d72.90664927395025!3d19.047221852877804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c605df8ed44f%3A0xbe73730abf8cdd35!2sMahinder%20Chambers%20Premises%20Co-Op%20Society%20LTD.!5e0!3m2!1sen!2sin!4v1743078769280!5m2!1sen!2sin";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.7390813408913!2d72.99860366949926!3d19.065657766422255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5e2f497df79%3A0xf03596e0cbac1c7a!2sSampurn(e)arth%20Environment%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1744178171719!5m2!1sen!2sin";
 iframe.width = "340";
 iframe.height = "220";
 iframe.style.border = "0";
@@ -176,6 +176,10 @@ iframe.allowFullscreen = true;
 iframe.loading = "lazy";
 iframe.referrerPolicy = "no-referrer-when-downgrade";
 map.appendChild(iframe);
+
+
+// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.7390813408913!2d72.99860366949926!3d19.065657766422255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5e2f497df79%3A0xf03596e0cbac1c7a!2sSampurn(e)arth%20Environment%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1744178171719!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
 const call = document.getElementById("contact-call");
 const email = document.getElementById("contact-email");

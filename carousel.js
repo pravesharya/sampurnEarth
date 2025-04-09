@@ -60,8 +60,7 @@ function createCarousel(pathsss, captionsss, time = 2500) {
     carouselMidCap.innerHTML = captionsss[currentIndex];
     carouselMidCap.classList.add("carousel-caption");
     carouselMidCap.classList.add("CC");
-  }
-  else{
+  } else {
     carouselMidCap.style.display = "none";
   }
   refreshCarousel(currentIndex);
@@ -110,6 +109,29 @@ function createCarousel(pathsss, captionsss, time = 2500) {
     carouselMidImg.appendChild(images[currentIndex]);
     refreshCarousel(currentIndex);
   }
+
+  function previewImage() {
+    console.log("previewImage called");
+    console.log(images[currentIndex].src);
+
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    overlay.classList.add("CC");
+    overlay.classList.add("PG10");
+    overlay.style.zIndex = "100";
+
+    const overlayImage = document.createElement("img");
+    overlayImage.src = images[currentIndex].src;
+    overlayImage.classList.add("overlay-image");
+
+    overlay.appendChild(overlayImage);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", () => {
+      document.body.removeChild(overlay);
+    });
+  }
+  carouselMid.addEventListener("click", previewImage);
 
   setInterval(() => {
     nextImage();

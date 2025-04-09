@@ -29,6 +29,9 @@
 .carousel-img{
     padding: 0px;
 }
+.carousel-img:hover{
+    cursor:zoom-in;
+}
 .carousel-img > img{
     height: 30rem;
 }
@@ -67,6 +70,10 @@
     border: black 1px solid;
 }
 
+.overlay-image{
+    height: 100%;
+    object-fit:scale-down;
+}
 /* Tab | Mobile =============================================================  */
 @media (max-width: 1024px) {
     /* .carousel{
