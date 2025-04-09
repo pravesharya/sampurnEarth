@@ -1,8 +1,9 @@
 // VMV =======================================================
 
-const vision = document.getElementById("vision-H");
-const mission = document.getElementById("mission-H");
-const value = document.getElementById("value-H");
+document.addEventListener("DOMContentLoaded", () => {
+  const vision = document.getElementById("vision-H");
+  const mission = document.getElementById("mission-H");
+  const value = document.getElementById("value-H");
 
 if (window.innerWidth < window.innerHeight) {
   console.log("Mobile device");
@@ -26,16 +27,16 @@ const kd_Role = document.getElementById("kd_Role");
 const kd_Detail = document.getElementById("kd_Detail");
 
 key_1.addEventListener("click", () => {
-  keyPerson(0);
+  keyPersonPopUp(0);
 });
 key_2.addEventListener("click", () => {
-  keyPerson(1);
+  keyPersonPopUp(1);
 });
 key_3.addEventListener("click", () => {
-  keyPerson(2);
+  keyPersonPopUp(2);
 });
 key_4.addEventListener("click", () => {
-  keyPerson(3);
+  keyPersonPopUp(3);
 });
 
 let people = [
@@ -68,38 +69,44 @@ let people = [
     image: "./assets/xAbout/key04.png",
   },
 ];
-function keyPerson(x) {
-  
+
+function keyPersonPopUp(x) {
   kd_Name.innerHTML = people[x].name;
   kd_Role.innerHTML = people[x].title;
   kd_Detail.innerHTML = people[x].description;
   kd_Img.src = people[x].image;
 
-  const pH = key_Overlay.offsetHeight;
-  const cH = key_Detailed.offsetHeight;
-  const newTop = pH - cH; 
-  console.log(pH, cH, newTop);
   
   key_Overlay.style.display = "block";
   setTimeout(() => {
-    // key_Detailed.style.top = `${newTop}px`;
+    console.log("key_Overlay height:", key_Overlay.offsetHeight);
+    console.log("key_Detailed height:", key_Detailed.offsetHeight);
+    const diff = key_Overlay.offsetHeight - key_Detailed.offsetHeight;
+    console.log("diff:", diff);
+    const newTop = diff / 2 + 40;
+    console.log("diff/2 + 40 :", newTop);
+    key_Detailed.style.top = `${newTop}px`;
+
+
     // (isMobile)? key_Detailed.style.bottom = `20%`: key_Detailed.style.bottom = "25%";
     
-    console.log(window.innerWidth);
-    if(window.innerWidth <= "540"){
-      key_Detailed.style.top = "20%";
-    } 
-    else if(window.innerWidth > "540" && window.innerWidth <= "1024" ){
-      key_Detailed.style.top = "30%";
-    }
+    // console.log(window.innerWidth);
+    // if(window.innerWidth > "540"){
+    //   key_Detailed.style.top = "30%";
+    // } 
+    // else if(window.innerWidth <= "540"){
+    //   key_Detailed.style.top = "20%";
+    // } 
+    // else if(window.innerWidth > "540" && window.innerWidth <= "1024" ){
+    // }
   }, 50);
 }
 
-const kd_close = document.getElementById("kd_close");
-kd_close.addEventListener("click", () => {
-  key_Detailed.style.position = "relative";
-  key_Detailed.style.top = "100%";
-  key_Overlay.style.display = "none";
+  kd_close.addEventListener("click", () => {
+    key_Detailed.style.position = "relative";
+    key_Detailed.style.top = "100%";
+    key_Overlay.style.display = "none";
+  });
 });
 
 
