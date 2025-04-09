@@ -106,8 +106,8 @@ function createCarousel(pathsss, captionsss, time = 2500) {
     if (currentIndex < 0) {
       currentIndex = totalImages - 1;
     }
-    carouselImg.removeChild(carouselImg.firstChild);
-    carouselImg.appendChild(images[currentIndex]);
+    carouselMidImg.removeChild(carouselMidImg.firstChild);
+    carouselMidImg.appendChild(images[currentIndex]);
     refreshCarousel(currentIndex);
   }
 

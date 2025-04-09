@@ -46,6 +46,7 @@
     border: var(--blue1) 2px solid;
 }
 .carousel-nav:hover{
+    cursor: pointer;
     border: white 2px solid;
     background-color: white;
     color: var(--blue1);
