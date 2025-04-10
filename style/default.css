@@ -229,6 +229,9 @@ img {
 .Text-White {
   color: white;
 }
+.Test-Caps{
+  text-transform: uppercase;
+}
 
 .H20 {
   font-size: 2rem;
