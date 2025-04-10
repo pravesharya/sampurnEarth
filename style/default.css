@@ -36,12 +36,19 @@
 .REVERSE {
   flex-direction: row-reverse;
 }
+.ALIGN-Lift{
+  align-items: flex-start;
+}
 
 .LIST {
   width: 100%;
   flex-wrap: wrap;
 }
 
+.PG20 {
+  padding: 2rem;
+  gap: 1rem;
+}
 .PG10 {
   padding: 1rem;
   gap: 1rem;
@@ -90,6 +97,9 @@ img {
 }
 .BR10{
   border-radius: 1rem;
+}
+.Border-Left{
+  border-left: var(--blue1) 2px solid;
 }
 
 .pointer:hover {
@@ -210,6 +220,9 @@ img {
   color: black;
 }
 
+.Text-Center {
+  text-align: center;
+}
 .Text-Left {
   text-align: left;
 }
@@ -223,6 +236,10 @@ img {
 }
 .H16 {
   font-size: 1.6rem;
+  font-weight: bold;
+}
+.H14 {
+  font-size: 1.4rem;
   font-weight: bold;
 }
 

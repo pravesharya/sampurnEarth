@@ -7,7 +7,8 @@ const bio = document.getElementById("bio");
 const ssa = document.getElementById("ssa");
 
 function openPage(page) {
-  window.open(`./services/${page}.html`, "_blank");
+  // window.open(`./services/${page}.html`, "_blank");
+  window.location.href = `./services/${page}.html`;
 }
 
 epr.addEventListener("click", () => {
