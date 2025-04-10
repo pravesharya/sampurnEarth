@@ -1,26 +1,32 @@
-.hero-div{
-    margin: 4rem 0;
+.hero-div {
+  margin: 4rem 0;
 }
+
 .hero {
   box-shadow: 1rem 1rem 0px var(--blue1);
   border: black 2px solid;
   border-radius: 1rem;
 }
+.hero:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
 
 .page-content {
-    width: 70%;
+  width: 70%;
+  text-align: center;
 }
 
 .page-content-Img {
-    box-shadow: 1rem 1rem 0px var(--blue2);
-    border: black 2px solid;
+  box-shadow: 1rem 1rem 0px var(--blue2);
+  border: black 2px solid;
 }
 
 .page-content-Text {
-    width: 100%;
-    padding: 0 2rem;
+  width: 100%;
+  padding: 0 2rem;
 }
 
-.list{
-    width: inherit;
+.list {
+  width: inherit;
 }
