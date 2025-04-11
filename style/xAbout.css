@@ -133,11 +133,17 @@
   padding: 0 6px;
   font-size: 1.4rem;
   background-color: rgb(223, 247, 255);
+  border:  white 1px solid;
 }
 .award-Link:hover {
   background-color: var(--blue1);
   color: white;
   font-weight: bold;
+  border:  black 1px solid;
+/* 
+  border-left:  black 1rem solid;
+  border-right:  black 1rem solid;
+ */
 }
 
 /* -------------------------------------------------------------- */
@@ -157,6 +163,10 @@
   font-size: 2rem;
   align-items: start;
 }
+.investor-Img:hover, .investor-Names:hover {
+    transform: translateY(-1rem);
+    transition: all 0.5s ease;
+ }
 
 /* T =============================================================  */
 @media (max-width: 1024px) {

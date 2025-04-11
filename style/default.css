@@ -53,6 +53,10 @@
   padding: 1rem;
   gap: 1rem;
 }
+.PG_2 {
+  padding: 2px;
+  gap: 2px;
+}
 .PG_0 {
   padding: 0px;
   gap: 0px;
@@ -210,11 +214,17 @@ img {
   background-color: rgb(185, 0, 0);
 }
 
+.love{
+  background-image: url("../assets/love.gif");
+  background-position: center;
+  background-size: 100%;
+  background-blend-mode: lighten ;
+}
 
 /* -------------------------------------------------------------- */
 
 .WhiteBG {
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.90);
   border-radius: 1rem;
   padding: 2rem;
   color: black;
@@ -233,6 +243,10 @@ img {
   text-transform: uppercase;
 }
 
+.H30 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 .H20 {
   font-size: 2rem;
   font-weight: bold;

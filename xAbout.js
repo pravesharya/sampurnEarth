@@ -86,19 +86,6 @@ function keyPersonPopUp(x) {
     const newTop = diff / 2 + 40;
     console.log("diff/2 + 40 :", newTop);
     key_Detailed.style.top = `${newTop}px`;
-
-
-    // (isMobile)? key_Detailed.style.bottom = `20%`: key_Detailed.style.bottom = "25%";
-    
-    // console.log(window.innerWidth);
-    // if(window.innerWidth > "540"){
-    //   key_Detailed.style.top = "30%";
-    // } 
-    // else if(window.innerWidth <= "540"){
-    //   key_Detailed.style.top = "20%";
-    // } 
-    // else if(window.innerWidth > "540" && window.innerWidth <= "1024" ){
-    // }
   }, 50);
 }
 
@@ -129,3 +116,16 @@ award_3.addEventListener("click", () => {
 award_4.addEventListener("click", () => {
     window.open("http://paper.hindustantimes.com/epaper/viewer.aspx.cms", "_blank");
 });
+
+
+// Investors =======================================================
+
+// const investors = document.querySelector(".investor-Names");
+// investors.addEventListener("mouseover", () => {
+//   investors.classList.add("love");
+
+// });
+
+// investors.addEventListener("mouseout", () => {
+//   investors.classList.remove("love");
+// });

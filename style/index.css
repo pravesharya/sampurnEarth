@@ -48,11 +48,15 @@
 
 /* -------------------------------------------------------------- */
 
-.contact {
+#contact-Text {
   width: 50%;
 }
+#address {
+  width: 60%;
+}
+
 #contact-Img {
-  width: 50%;
+  width: 40%;
   background-image: url("../assets/home/collectorBG.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -67,7 +71,7 @@
 }
 
 /* -------------------------------------------------------------- */
-#partners{
+#partners {
   width: 80%;
   flex-wrap: wrap;
 }
@@ -76,10 +80,15 @@
   background-color: white;
   border: var(--blue1) 4px solid;
   border-radius: 1rem;
+  overflow: hidden;
 }
 .partner img {
   width: 10rem;
   border-radius: inherit;
+}
+.partner:hover img {
+  transform: scale(1.1);
+  transition: all 500ms ease;
 }
 
 /* Tab | Mobile =============================================================  */
@@ -102,20 +111,25 @@
 }
 
 @media (max-width: 540px) {
-  #contactSection{
+  #contactSection {
     padding: 0px;
   }
+
   #contactDiv {
     flex-direction: column;
     padding: 0px;
   }
-  #contact-Img{
+  #contact-Text {
+    width: 80%;
+  }
+  #address {
+    width: 100%;
+  }
+  #contact-Img {
     width: 100%;
     padding: 0px;
-  background-size: 100%;
-  background-position:top;
-
-
+    background-size: 100%;
+    background-position: top;
   }
 }
 
@@ -132,13 +146,11 @@
     font-size: 2.6rem;
   }
 
-
-
-  #partners{
+  #partners {
     width: 100%;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
-  #partners img{
+  #partners img {
     width: 3rem;
   }
 }

@@ -7,24 +7,45 @@ const bio = document.getElementById("bio");
 const ssa = document.getElementById("ssa");
 
 function openPage(page) {
-  // window.open(`./services/${page}.html`, "_blank");
   window.location.href = `./services/${page}.html`;
+}
+function openPageNT(page) {
+  window.open(`./services/${page}.html`, "_blank");
 }
 
 epr.addEventListener("click", () => {
   openPage("epr");
 });
+epr.addEventListener("contextmenu", () => {
+  openPageNT("epr");
+});
+
 pcr.addEventListener("click", () => {
   openPage("pcr");
 });
-dwm.addEventListener("click", () => {
-  openPage("dwa");
+pcr.addEventListener("contextmenu", () => {
+  openPageNT("pcr");
 });
+
+dwm.addEventListener("click", () => {
+  openPage("dwm");
+});
+dwm.addEventListener("contextmenu", () => {
+  openPageNT("dwm");
+});
+
 bio.addEventListener("click", () => {
   openPage("bio");
 });
+bio.addEventListener("contextmenu", () => {
+  openPageNT("bio");
+});
+
 ssa.addEventListener("click", () => {
   openPage("ssa");
+});
+ssa.addEventListener("contextmenu", () => {
+  openPageNT("ssa");
 });
 
 // Contact ==============================================================
@@ -39,18 +60,43 @@ function makeCall(number) {
   window.location.href = `tel:${number}`;
 }
 
-epr_Call.addEventListener("click", () => {
+epr_Call.addEventListener("click", (event) => {
+  event.stopPropagation();
   makeCall(8600708629);
 });
-pcr_Call.addEventListener("click", () => {
+epr_Call.addEventListener("contextmenu", (event) => {
+  event.stopPropagation();
+});
+
+pcr_Call.addEventListener("click", (event) => {
+  event.stopPropagation();
   makeCall(8600708629);
 });
-dwm_Call.addEventListener("click", () => {
-  makeCall(9372777623);
+pcr_Call.addEventListener("contextmenu", (event) => {
+  event.stopPropagation();
 });
-bio_Call.addEventListener("click", () => {
-  makeCall(9096039586);
+
+dwm_Call.addEventListener("click", (event) => {
+  event.stopPropagation();
+  makeCall(9920113470); // Ritvik
 });
-ssa_Call.addEventListener("click", () => {
+dwm_Call.addEventListener("contextmenu", (event) => {
+  event.stopPropagation();
+});
+
+bio_Call.addEventListener("click", (event) => {
+  event.stopPropagation();
+  makeCall(9096039586); // Debartha
+});
+bio_Call.addEventListener("contextmenu", (event) => {
+  event.stopPropagation();
+});
+
+ssa_Call.addEventListener("click", (event) => {
+  event.stopPropagation();
   makeCall(7887551775);
 });
+ssa_Call.addEventListener("contextmenu", (event) => {
+  event.stopPropagation();
+});
+
