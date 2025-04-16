@@ -12,7 +12,9 @@
     <header id="header" class="CC HF"></header>
     <div id="currentPage">services</div>
     <div class="current-location CC PG10">
-      Services > <u> Social Support Activities </u>
+      <div class="current-location-P" id="S-Page">Services</div>
+      >
+      <div class="current-location-C">Social Support Activities</div>
     </div>
 
     <div class="main-content CC">
@@ -217,5 +219,18 @@
 
     <footer id="footer" class="CC HF"></footer>
     <script src="./z-header-footer.js"></script>
+    
+    <script>
+      const services = document.getElementById("S-Page");
+      services.addEventListener("click", () => {
+        window.location.href = "../xServices.html";
+      });
+
+      const ssa_Call = document.getElementById("call-ssa");
+      ssa_Call.addEventListener("click", () => {
+        window.location.href = `tel:7887551775`;
+      });
+    </script>
+    
   </body>
 </html>

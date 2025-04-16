@@ -99,23 +99,23 @@ function keyPersonPopUp(x) {
 
 // Awards ++ =======================================================
 
-const award_1 = document.getElementById("award_1");
-const award_2 = document.getElementById("award_2");
-const award_3 = document.getElementById("award_3");
-const award_4 = document.getElementById("award_4");
+// const award_1 = document.getElementById("award_1");
+// const award_2 = document.getElementById("award_2");
+// const award_3 = document.getElementById("award_3");
+// const award_4 = document.getElementById("award_4");
 
-award_1.addEventListener("click", () => {
-    window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
-});
-award_2.addEventListener("click", () => {
-    window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
-});
-award_3.addEventListener("click", () => {
-    window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
-});
-award_4.addEventListener("click", () => {
-    window.open("http://paper.hindustantimes.com/epaper/viewer.aspx.cms", "_blank");
-});
+// award_1.addEventListener("click", () => {
+//     window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
+// });
+// award_2.addEventListener("click", () => {
+//     window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
+// });
+// award_3.addEventListener("click", () => {
+//     window.open("http://www.sampurnearth.com/award_recognistion.html#", "_blank");
+// });
+// award_4.addEventListener("click", () => {
+//     window.open("http://paper.hindustantimes.com/epaper/viewer.aspx.cms", "_blank");
+// });
 
 
 // Investors =======================================================

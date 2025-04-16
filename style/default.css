@@ -164,6 +164,20 @@ img {
   flex-direction: column;
 }
 
+.hero-Div{
+  width: 100%;
+  border-radius: 1rem;
+  border: var(--blue1) 2px solid;
+  overflow: hidden;
+}
+.hero-Div:hover > img {
+  transform: scale(1.05);
+  transition: all 1000ms ease;
+}
+#hero{
+  width: 100%;
+}
+
 /* -------------------------------------------------------------- */
 
 .BTN {
@@ -270,7 +284,7 @@ img {
   font-size: 1.2rem;
 }
 
-/* Tab =============================================================  */
+/* Tab | Mobile =============================================================  */
 @media (max-width: 1024px) {
   .section-heading {
     font-size: 4.4rem;
@@ -283,7 +297,6 @@ img {
   }
 }
 
-/* Mobile =============================================================  */
 @media (max-width: 430px) {
   .section-heading {
     font-size: 3.2rem;

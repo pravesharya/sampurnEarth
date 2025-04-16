@@ -139,7 +139,7 @@ function createHeader() {
   });
 
   document.getElementById("about").addEventListener("click", () => {
-    window.location.href = "./xAbout.html";
+    window.location.href = "../xAbout.html";
   });
 }
 createHeader();

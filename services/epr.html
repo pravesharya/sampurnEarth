@@ -12,8 +12,11 @@
     <header id="header" class="CC HF"></header>
     <div id="currentPage">services</div>
     <div class="current-location CC PG10">
-      Services > <u>Extended Producer Responsibility </u>
+      <div class="current-location-P" id="S-Page">Services</div>
+      >
+      <div class="current-location-C">Extended Producer Responsibility</div>
     </div>
+
 
     <div class="main-content CC">
       <div class="hero-div">
@@ -174,5 +177,18 @@
 
     <footer id="footer" class="CC HF"></footer>
     <script src="./z-header-footer.js"></script>
+    
+    <script>
+      const services = document.getElementById("S-Page");
+      services.addEventListener("click", () => {
+        window.location.href = "../xServices.html";
+      });
+
+      const epr_Call = document.getElementById("call-epr");
+      dwm_Call.addEventListener("click", () => {
+        window.location.href = `tel:8600708629`;
+      });
+    </script>
+    
   </body>
 </html>

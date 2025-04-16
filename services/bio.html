@@ -12,7 +12,9 @@
     <header id="header" class="CC HF"></header>
     <div id="currentPage">services</div>
     <div class="current-location CC PG10">
-      Services > <u>Biogas Solutions </u>
+      <div class="current-location-P" id="S-Page">Services</div>
+      >
+      <div class="current-location-C">Biogas Solutions</div>
     </div>
 
     <div class="main-content CC">
@@ -21,7 +23,7 @@
       </div>
 
       <div class="H30">Biogas Solutions</div>
-      <div class="T16">
+      <div class="T16 Text-Center">
         Biogas Installation Projects in India : Transforming Waste into Energy
       </div>
 
@@ -157,9 +159,9 @@
           standards and ensure optimal performance and reliability.
         </div>
 
-        <div class="CC">
+        <div class="CC service-vid-Div">
           <iframe
-            id="dbs-bank"
+            id="service-vid"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/ZiltbInUHsQ?si=PqFXlMDNy974X9jD"
@@ -185,5 +187,24 @@
 
     <footer id="footer" class="CC HF"></footer>
     <script src="./z-header-footer.js"></script>
+
+    <script>
+      const services = document.getElementById("S-Page");
+      services.addEventListener("click", () => {
+        window.location.href = "../xServices.html";
+      });
+
+      const bio_Call = document.getElementById("call-bio");
+      bio_Call.addEventListener("click", () => {
+        window.location.href = `tel:9096039586`;
+      });
+
+      const vid = document.getElementById("service-vid");
+      const widthP = vid.parentElement.offsetWidth;
+      const widthC = widthP - 20;
+      const heightC = widthC * 0.5625; // 16:9 aspect ratio
+      vid.style.width = `${widthC}px`;
+      vid.style.height = `${heightC}px`;
+    </script>
   </body>
 </html>

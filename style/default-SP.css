@@ -1,8 +1,8 @@
-*{
-  user-select:text;
+* {
+  user-select: text;
 }
 
-.current-location{
+.current-location {
   position: fixed;
   top: 8rem;
   left: 0;
@@ -11,10 +11,18 @@
   padding: 1rem;
   color: black;
   background-color: var(--green);
-  z-index: 1000;
+  z-index: 100;
+}
+.current-location-P:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.current-location-C {
+  text-decoration: underline;
 }
 
-.main-content, .page-content{
+.main-content,
+.page-content {
   gap: 4rem;
 }
 
@@ -25,11 +33,11 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-.hero-div:hover img{
+.hero-div:hover img {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
-.hero-div img{
+.hero-div img {
   transform: scale(1.01);
 }
 
@@ -43,10 +51,10 @@
   border: black 2px solid;
   overflow: hidden;
 }
-.page-content-Img img{
+.page-content-Img img {
   transform: scale(1.015);
 }
-.page-content-Img:hover img{
+.page-content-Img:hover img {
   transform: scale(1.02);
   transition: all 0.5s ease;
 }
@@ -60,13 +68,41 @@
   width: inherit;
 }
 
-.get-involved{
+.get-involved {
   color: var(--blue1);
   font-size: 3rem;
   font-weight: bold;
 }
 
-#qr-scan , #dbs-bank{
-  width: 800px;
-  height: 400px;
+.service-vid-Div {
+  width: 100%;
+  /* background-color: var(--blue2); */
+}
+
+/* Tab | Mobile =============================================================  */
+
+@media (max-width: 1024px) {
+  .main-content {
+    width: 100%;
+    padding: 2rem;
+  }
+  .hero-div {
+    margin: 0;
+    box-shadow: none;
+  }
+  .page-content {
+    width: 90%;
+  }
+  .page-content-Img {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .page-content {
+    width: 100%;
+  }
+  .H30{
+    text-align: center;
+  }
 }

@@ -1,6 +1,3 @@
-#hero {
-  width: 100rem;
-}
 
 #hiring {
   width: 80%;
@@ -42,10 +39,6 @@
 
 /* Tab | Mobile =============================================================  */
 @media (max-width: 1024px) {
-  #hero {
-    width: 80%;
-  }
-
   #hiring {
     flex-direction: column;
   }

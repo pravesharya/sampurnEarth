@@ -12,7 +12,9 @@
     <header id="header" class="CC HF"></header>
     <div id="currentPage">services</div>
     <div class="current-location CC PG10">
-      Services > <u>Dry Waste Management</u>
+      <div class="current-location-P" id="S-Page">Services</div>
+      >
+      <div class="current-location-C">Dry Waste Management</div>
     </div>
 
     <div class="main-content CC">
@@ -192,9 +194,9 @@
           </ol>
         </div>
 
-        <div class="CC">
+        <div class="CC service-vid-Div">
           <iframe
-            id="qr-scan"
+            id="service-vid"
             src="https://www.youtube.com/embed/0pNQ3Fg27L4?si=aJkVpglC7h2pQAHK"
             title="YouTube video player"
             frameborder="0"
@@ -217,5 +219,24 @@
 
     <footer id="footer" class="CC HF"></footer>
     <script src="./z-header-footer.js"></script>
+
+    <script>
+      const services = document.getElementById("S-Page");
+      services.addEventListener("click", () => {
+        window.location.href = "../xServices.html";
+      });
+
+      const dwm_Call = document.getElementById("call-dwm");
+      dwm_Call.addEventListener("click", () => {
+        window.location.href = `tel:9920113470`;
+      });
+
+      const vid = document.getElementById("service-vid");
+      const widthP = vid.parentElement.offsetWidth;
+      const widthC = widthP - 20;
+      const heightC = widthC * 0.5625; // 16:9 aspect ratio
+      vid.style.width = `${widthC}px`;
+      vid.style.height = `${heightC}px`;
+    </script>
   </body>
 </html>

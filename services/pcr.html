@@ -12,7 +12,9 @@
     <header id="header" class="CC HF"></header>
     <div id="currentPage">services</div>
     <div class="current-location CC PG10">
-      Services > <u>Post-Consumer Recyclates </u>
+      <div class="current-location-P" id="S-Page">Services</div>
+      >
+      <div class="current-location-C">Post-Consumer Recyclates</div>
     </div>
 
     <div class="main-content CC">
@@ -136,5 +138,18 @@
 
     <footer id="footer" class="CC HF"></footer>
     <script src="./z-header-footer.js"></script>
+    
+    <script>
+      const services = document.getElementById("S-Page");
+      services.addEventListener("click", () => {
+        window.location.href = "../xServices.html";
+      });
+
+      const pcr_Call = document.getElementById("call-pcr");
+      pcr_Call.addEventListener("click", () => {
+        window.location.href = `tel:8600708629`;
+      });
+    </script>
+    
   </body>
 </html>

@@ -1,8 +1,8 @@
 #hero {
-  background-image: url("../assets/xAbout/BG.png");
+  background-image: url("../assets/xAbout/bg-c.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 100%;
 }
 .vmv {
   width: 80%;
