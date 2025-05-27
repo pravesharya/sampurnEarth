@@ -1,4 +1,4 @@
-import { createCarousel } from "./carousel.js";
+import { createCarousel } from "./carouselX.js";
 
 const TMsss = document.getElementById("testimonials");
 

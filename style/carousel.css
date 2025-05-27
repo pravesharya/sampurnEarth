@@ -10,7 +10,6 @@
     width: 100%;
     height: 90%;
     padding: 0px;
-    justify-content: space-between;
 }
 .carousel-r2{
     width: 100%;
@@ -42,21 +41,20 @@
 }
 
 .carousel-nav{
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
     background-color: var(--blue1);
-    border: var(--blue1) 2px solid;
+    border: var(--blue1) 4px solid;
 }
 .carousel-nav:hover{
     cursor: pointer;
-    border: white 2px solid;
     background-color: white;
-    color: var(--blue1);
+    border: white 4px solid;
 }
 .carousel-nav img{
-    width: 32px;
-    height: 32px;
+    width: inherit;
+    height: inherit;
 }
 
 .carousel-dots{
@@ -74,6 +72,9 @@
     height: 100%;
     object-fit:scale-down;
 }
+
+
+
 /* Tab | Mobile =============================================================  */
 @media (max-width: 1024px) {
     /* .carousel{
