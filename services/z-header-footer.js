@@ -156,6 +156,10 @@ footer.classList.add("HF");
 const logoF = document.createElement("div");
 const logoF_Img = document.createElement("img");
 logoF.addEventListener("click", HOME);
+logoF.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  window.open("../index.html", "_blank");
+});
 
 function createFooter() {
   logoF_Img.src = isMobile ? "./assets/logo-fM.png" : "./assets/logo-f.png";
