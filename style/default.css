@@ -178,6 +178,12 @@ img {
   width: 100%;
 }
 
+.width-60 {
+  width: 60%;
+}
+.width-70 {
+  width: 70%;
+}
 /* -------------------------------------------------------------- */
 
 .BTN {
@@ -253,9 +259,10 @@ img {
 .Text-White {
   color: white;
 }
-.Test-Caps{
+.Text-Caps{
   text-transform: uppercase;
 }
+
 
 .H30 {
   font-size: 3rem;

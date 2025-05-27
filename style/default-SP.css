@@ -76,7 +76,12 @@
 
 .service-vid-Div {
   width: 100%;
-  /* background-color: var(--blue2); */
+}
+#tiss{
+  border: var(--blue1) 2px solid;
+}
+#tiss:hover{
+  border:black 2px solid;
 }
 
 /* Tab | Mobile =============================================================  */

@@ -160,7 +160,7 @@
         </div>
 
         <div class="CC service-vid-Div">
-          <iframe
+          <!-- <iframe
             id="service-vid"
             width="560"
             height="315"
@@ -170,7 +170,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
+
+          <video id="tiss" src="./assets/bio/tiss.mp4"></video>
         </div>
 
         <div class="get-involved">Get Involved</div>
@@ -199,12 +201,24 @@
         window.location.href = `tel:9096039586`;
       });
 
-      const vid = document.getElementById("service-vid");
+      const vidDiv = document.querySelector(".service-vid-Div");
+      const vid = document.getElementById("tiss");
+      vid.preload = "auto";
+      vid.controls = true;
+
       const widthP = vid.parentElement.offsetWidth;
-      const widthC = widthP - 20;
+      const widthC = widthP - 40;
       const heightC = widthC * 0.5625; // 16:9 aspect ratio
       vid.style.width = `${widthC}px`;
       vid.style.height = `${heightC}px`;
+
+      // vid.addEventListener("mouseover", () => {
+      //   vid.play();
+      // });
+      
+      // vid.addEventListener("mouseout", () => {
+      //   vid.pause();
+      // });
     </script>
   </body>
 </html>

@@ -22,6 +22,10 @@ header.classList.add("HF");
 const logoH = document.createElement("div");
 const logoH_Img = document.createElement("img");
 logoH.addEventListener("click", HOME);
+logoH.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  window.open("./index.html", "_blank");
+});
 
 function createHeader() {
   logoH_Img.src = "./assets/logo-h.png";

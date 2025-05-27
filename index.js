@@ -44,6 +44,56 @@ intro.addEventListener("mouseout", () => {
   intro.play();
 });
 
+// SERVICES  ================================================================
+
+const epr = document.getElementById("epr");
+const pcr = document.getElementById("pcr");
+const dwm = document.getElementById("dwm");
+const bio = document.getElementById("bio");
+const ssa = document.getElementById("ssa");
+
+function openPage(page) {
+  window.location.href = `./services/${page}.html`;
+}
+function openPageNT(page) {
+  window.open(`./services/${page}.html`, "_blank");
+}
+
+epr.addEventListener("click", () => {
+  openPage("epr");
+});
+epr.addEventListener("contextmenu", () => {
+  openPageNT("epr");
+});
+
+pcr.addEventListener("click", () => {
+  openPage("pcr");
+});
+pcr.addEventListener("contextmenu", () => {
+  openPageNT("pcr");
+});
+
+dwm.addEventListener("click", () => {
+  openPage("dwm");
+});
+dwm.addEventListener("contextmenu", () => {
+  openPageNT("dwm");
+});
+
+bio.addEventListener("click", () => {
+  openPage("bio");
+});
+bio.addEventListener("contextmenu", () => {
+  openPageNT("bio");
+});
+
+ssa.addEventListener("click", () => {
+  openPage("ssa");
+});
+ssa.addEventListener("contextmenu", () => {
+  openPageNT("ssa");
+});
+
 // COUNTER  ================================================================
 
 let v1, v2, v3;

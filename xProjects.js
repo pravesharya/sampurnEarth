@@ -6,24 +6,58 @@ const scrapyard = document.getElementById("scrapyard");
 const goa = document.getElementById("goa");
 const nagpur = document.getElementById("nagpur");
 
+function openPage(page) {
+  window.location.href = `./projects/${page}.html`;
+}
+function openPageNT(page) {
+  window.open(`./projects/${page}.html`, "_blank");
+}
+
 bintix.addEventListener("click", () => {
-    window.location.href = "./projects/bintix.html";
+  openPage("bintix");
 });
+bintix.addEventListener("contextmenu", () => {
+  openPageNT("bintix");
+});
+
 bisleri.addEventListener("click", () => {
-    window.location.href = "./projects/bisleri.html";
+  openPage("bisleri");
 });
+bisleri.addEventListener("contextmenu", () => {
+  openPageNT("bisleri");
+});
+
 plastic.addEventListener("click", () => {
-    window.location.href = "./projects/plastic.html";
+  openPage("pwrf");
 });
+plastic.addEventListener("contextmenu", () => {
+  openPageNT("pwrf");
+});
+
 bicholim.addEventListener("click", () => {
-    window.location.href = "./projects/bicholim.html";
+  openPage("bicholim");
 });
+bicholim.addEventListener("contextmenu", () => {
+  openPageNT("bicholim");
+});
+
 scrapyard.addEventListener("click", () => {
-    window.location.href = "./projects/scrapyard.html";
+  openPage("scrapyard");
 });
+scrapyard.addEventListener("contextmenu", () => {
+  openPageNT("scrapyard");
+});
+
 goa.addEventListener("click", () => {
-    window.location.href = "./projects/goa.html";
+  openPage("goa");
 });
+goa.addEventListener("contextmenu", () => {
+  openPageNT("goa");
+});
+
 nagpur.addEventListener("click", () => {
-    window.location.href = "./projects/nagpur.html";
+  openPage("nagpur");
+});
+nagpur.addEventListener("contextmenu", () => {
+  openPageNT("nagpur");
 });
